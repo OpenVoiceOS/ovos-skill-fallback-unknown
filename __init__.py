@@ -22,24 +22,7 @@ class UnknownSkill(FallbackSkill):
     def initialize(self):
         self.register_fallback(self.handle_fallback, 100)
 
-    def read_voc_lines(self, name):
-        with open(self.find_resource(name + '.voc', 'vocab')) as f:
-            return filter(bool, map(str.strip, f.read().split('\n')))
-
     def handle_fallback(self, message):
-        utterance = message.data['utterance'].lower()
-
-        try:
-            self.report_metric('failed-intent', {'utterance': utterance})
-        except Exception:
-            self.log.exception('Error reporting metric')
-
-        for i in ['question', 'who.is', 'why.is']:
-            for l in self.read_voc_lines(i):
-                if utterance.startswith(l):
-                    self.log.info('Fallback type: ' + i)
-                    self.speak_dialog(i, data={'remaining': l.replace(i, '')})
-                    return True
         self.speak_dialog('unknown')
         return True
 
