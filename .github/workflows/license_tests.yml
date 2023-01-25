@@ -37,7 +37,7 @@ jobs:
           requirements: 'requirements-all.txt'
           fail: 'Copyleft,Other,Error'
           fails-only: true
-          exclude: '^(tqdm|ovos-skill-homescreen|bs4).*'
+          exclude: '^(tqdm|ovos-skill-fallback-unknown).*'
           exclude-license: '^(Mozilla).*$'
       - name: Print report
         if: ${{ always() }}
