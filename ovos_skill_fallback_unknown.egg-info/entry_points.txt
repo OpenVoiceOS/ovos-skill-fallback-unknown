@@ -1,0 +1,3 @@
+[ovos.plugin.skill]
+skill-ovos-fallback-unknown.openvoiceos=skill_ovos_fallback_unknown:UnknownSkill
+

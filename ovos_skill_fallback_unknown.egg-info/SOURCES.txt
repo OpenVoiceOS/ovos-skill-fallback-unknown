@@ -1,0 +1,11 @@
+LICENSE
+README.md
+__init__.py
+setup.py
+version.py
+ovos_skill_fallback_unknown.egg-info/PKG-INFO
+ovos_skill_fallback_unknown.egg-info/SOURCES.txt
+ovos_skill_fallback_unknown.egg-info/dependency_links.txt
+ovos_skill_fallback_unknown.egg-info/entry_points.txt
+ovos_skill_fallback_unknown.egg-info/top_level.txt
+test/test_skill_loading.py
