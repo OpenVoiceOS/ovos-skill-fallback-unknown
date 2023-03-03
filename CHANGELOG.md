@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.3a1...HEAD)
+
+**Merged pull requests:**
+
+- Remove obsolete files. [\#3](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/3) ([gmsoft-tuxicoman](https://github.com/gmsoft-tuxicoman))
+
+## [V0.0.3a1](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/V0.0.3a1) (2023-02-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.2...V0.0.3a1)
 
 **Merged pull requests:**
 
