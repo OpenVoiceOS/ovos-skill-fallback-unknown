@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/HEAD)
+## [V0.0.3a3](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/V0.0.3a3) (2023-04-13)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.3a2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.3a2...V0.0.3a3)
 
 **Merged pull requests:**
 
