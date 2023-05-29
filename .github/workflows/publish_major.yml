@@ -40,7 +40,9 @@ jobs:
           branch: master
           force: true
       - name: version
-        run: echo "::set-output name=version::$(python setup.py --version)"
+        run: |
+          VERSION="$(python setup.py --version)"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
         id: version
       - name: Create Release
         id: create_release
@@ -60,9 +62,11 @@ jobs:
         run: |
           python setup.py bdist_wheel
       - name: Prepare next Major version
-        run: echo "::set-output name=version::$(python setup.py --version)"
+        run: |
+          VERSION="$(python setup.py --version)"
+          echo "bumped_version=$VERSION" >> "$GITHUB_OUTPUT"
         id: alpha
-      - name: Increment Version ${{ steps.alpha.outputs.version }}Alpha0
+      - name: Increment Version ${{ steps.alpha.outputs.bumped_version }}Alpha0
         run: |
           VER=$(python setup.py --version)
           python scripts/bump_major.py
