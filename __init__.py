@@ -12,9 +12,10 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-from mycroft.skills.core import FallbackSkill
+from ovos_workshop.skills.fallback import FallbackSkill
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
+from ovos_workshop.decorators import fallback_handler
 
 
 class UnknownSkill(FallbackSkill):
@@ -31,9 +32,7 @@ class UnknownSkill(FallbackSkill):
                                    no_network_fallback=True,
                                    no_gui_fallback=True)
 
-    def initialize(self):
-        self.register_fallback(self.handle_fallback, 100)
-
+    @fallback_handler(priority=100)
     def handle_fallback(self, message):
         utterance = message.data['utterance'].lower()
 
@@ -50,7 +49,3 @@ class UnknownSkill(FallbackSkill):
         else:
             self.speak_dialog('unknown')
         return True
-
-
-def create_skill():
-    return UnknownSkill()
