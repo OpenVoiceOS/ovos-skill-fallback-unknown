@@ -2,7 +2,7 @@
 Capture unrecognized _Utterances_
 
 ## About
-Mycroft doesn't know how to do or answer everything (yet).  This _fallback_ is how Mycroft lets you know that, unfortunately, it can't help with what you said.
+OpenVoiceOS doesn't know how to do or answer everything (yet).  This _fallback_ is how the assistant lets you know that, unfortunately, it can't help with what you said.
 
 
 ## Category
