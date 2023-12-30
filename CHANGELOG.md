@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.3...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.4a1...HEAD)
+
+**Merged pull requests:**
+
+- setup.py [\#6](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/6) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.4a1](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/V0.0.4a1) (2023-05-30)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.3...V0.0.4a1)
 
 **Implemented enhancements:**
 
