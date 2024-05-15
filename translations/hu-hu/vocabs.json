@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "mi\u00e9rt van",
+        "mi\u00e9rt (lesz|fog)",
+        "mi\u00e9rt (volt|tett|tette|csin\u00e1lt|csin\u00e1lta)",
+        "mi\u00e9rt (tesz|csin\u00e1l)",
+        "mi\u00e9rt (tesznek|csin\u00e1lnak)"
+    ],
+    "question.voc": [
+        "mi (van|a|az)",
+        "mi (lesz|fog)",
+        "mit (tett|csin\u00e1lt)",
+        "mit (tesz|csin\u00e1l)",
+        "mit (tesznek|csin\u00e1lnak)",
+        "hol (van|a|az)",
+        "hol (lesz|lesznek|fog|fognak)",
+        "hol (volt|csin\u00e1lt|csin\u00e1lta|tette)",
+        "hol (tesz|csin\u00e1l)",
+        "hol (tesznek|csin\u00e1lnak)",
+        "mikor van",
+        "mikor (lesz|fog)",
+        "mikor (volt|tette|csin\u00e1lta)",
+        "mikor (tesz|csin\u00e1l)",
+        "mikor (tesznek|csin\u00e1lnak)"
+    ],
+    "who.is.voc": [
+        "ki (a|az)",
+        "ki (lesz|fog)",
+        "ki (volt|tette|csin\u00e1lta)",
+        "ki (tesz|csin\u00e1l)",
+        "kik (tesznek|csin\u00e1lnak)"
+    ]
+}

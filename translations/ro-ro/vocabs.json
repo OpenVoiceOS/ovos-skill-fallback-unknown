@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "de ce este",
+        "de ce va",
+        "de ce a f\u0103cut",
+        "de ce",
+        "de ce face"
+    ],
+    "question.voc": [
+        "ce este",
+        "ce va",
+        "ce a f\u0103cut",
+        "ce face",
+        "ce fac",
+        "unde este",
+        "unde vor",
+        "unde a f\u0103cut-o",
+        "unde se \u00eent\u00e2mpl\u0103",
+        "unde se face",
+        "cand este",
+        "cand va",
+        "c\u00e2nd a f\u0103cut",
+        "cand",
+        "c\u00e2nd"
+    ],
+    "who.is.voc": [
+        "cine este",
+        "cine va",
+        "cine a facut",
+        "cine",
+        "care fac"
+    ]
+}

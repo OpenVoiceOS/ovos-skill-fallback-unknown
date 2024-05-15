@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Przepraszam, nie mog\u0119 Ci z tym pom\u00f3c.",
+        "Nie jestem pewien jak Ci z tym pom\u00f3c.",
+        "Nie rozumiem, ale ka\u017cdego dnia ucz\u0119 si\u0119 nowych rzeczy.",
+        "Nie jestem pewien jak na to odpowiedzie\u0107."
+    ],
+    "why.is.dialog": [
+        "Nie jestem pewien jak Ci z tym pom\u00f3c.",
+        "Nie wiem",
+        "Nie jestem do ko\u0144ca pewien.",
+        "Nie jestem pewien.",
+        "Nie jestem pewien, ale robi\u0119 co mog\u0119 by si\u0119 uczy\u0107."
+    ],
+    "who.is.dialog": [
+        "Nie wiem kto to jest.",
+        "Nie jestem pewien kto to jest."
+    ],
+    "unknown.dialog": [
+        "Nie rozumiem, ale ka\u017cdego dnia ucz\u0119 si\u0119 nowych rzeczy.",
+        "Przepraszam, nie rozumiem.",
+        "Nie wiem co to znaczy.",
+        "Przepraszam, nie za\u0142apa\u0142em tego.",
+        "Przepraszam nie rozumiem.",
+        "Nie rozumiem.",
+        "Nie jestem pewien czy Ci\u0119 zrozumia\u0142em.",
+        "Spr\u00f3buj powiedzie\u0107 to w inny spos\u00f3b.",
+        "Powt\u00f3rz swoje polecenie u\u017cywaj\u0105c innych s\u0142\u00f3w."
+    ]
+}

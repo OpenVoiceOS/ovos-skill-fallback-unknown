@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "dlaczego jest",
+        "dlaczego b\u0119dzie",
+        "dlaczego zrobi\u0142",
+        "dlaczego",
+        "dlaczego"
+    ],
+    "question.voc": [
+        "co jest",
+        "co b\u0119dzie",
+        "co zrobi\u0142em",
+        "co robi",
+        "co robi\u0107",
+        "gdzie jest",
+        "gdzie b\u0119dzie",
+        "gdzie zrobi\u0142",
+        "gdzie robi",
+        "gdzie robi\u0107",
+        "kiedy jest",
+        "kiedy b\u0119dzie",
+        "kiedy zrobi\u0142",
+        "kiedy robi",
+        "kiedy zrobi\u0107"
+    ],
+    "who.is.voc": [
+        "kim jest",
+        "kim b\u0119dzie",
+        "kto zrobi\u0142",
+        "kto robi",
+        "kto to robi"
+    ]
+}

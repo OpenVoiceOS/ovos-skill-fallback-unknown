@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Beklager, jeg kan ikke hj\u00e6lp dig med det.",
+        "Jeg er ikke sikker p\u00e5 hvodan jeg kan hj\u00e6lp dig med det.",
+        "Det forst\u00e5r jeg ikke, men jeg l\u00e6rer nyt hver dag.",
+        "Jeg er ikke sikker p\u00e5 hvordan det kan besvares."
+    ],
+    "why.is.dialog": [
+        "Jeg er ikke sikker p\u00e5 hvodan jeg kan hj\u00e6lp dig med det.",
+        "Jeg ved det ikke.",
+        "Jeg er ikke helt sikker.",
+        "Jeg er ikke siker.",
+        "Jeg er ikke sikker, men jeg g\u00f8r mit bedste for at l\u00e6re nyt."
+    ],
+    "who.is.dialog": [
+        "Jeg ved ikke hvem det er.",
+        "Jeg er ikke sikker p\u00e5 hvem det er."
+    ],
+    "unknown.dialog": [
+        "Det forst\u00e5r jeg ikke, men jeg l\u00e6rer nyt hver dag.",
+        "Jeg beklager, men jeg forst\u00e5r ikke.",
+        "Jeg ved ikke hvad det betyder.",
+        "Beklager, jeg fik ikke fat i det.",
+        "Beklager, jeg forst\u00e5r ikke.",
+        "Jeg forst\u00e5r ikke.",
+        "Jeg er ikke sikker p\u00e5 jeg forstod dig.",
+        "Du m\u00e5 pr\u00f8ve at sige det p\u00e5 en anden m\u00e5de.",
+        "Venligst omformul\u00e9r din foresp\u00f8rgsel."
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "varf\u00f6r \u00e4r",
+        "varf\u00f6r kommer",
+        "varf\u00f6r gjorde",
+        "varf\u00f6r g\u00f6r",
+        "varf\u00f6r"
+    ],
+    "question.voc": [
+        "vad \u00e4r",
+        "vad kommer",
+        "vad gjorde",
+        "vad g\u00f6r",
+        "what g\u00f6r",
+        "var \u00e4r",
+        "var kommer",
+        "var gjorde",
+        "var h\u00e4nde",
+        "var g\u00f6r",
+        "n\u00e4r \u00e4r",
+        "n\u00e4r kommer",
+        "n\u00e4r h\u00e4nde",
+        "n\u00e4r g\u00f6r",
+        "n\u00e4r g\u00f6r"
+    ],
+    "who.is.voc": [
+        "vem \u00e4r",
+        "vem kommer",
+        "vem gjorde",
+        "vem g\u00f6r",
+        "vem g\u00f6r"
+    ]
+}

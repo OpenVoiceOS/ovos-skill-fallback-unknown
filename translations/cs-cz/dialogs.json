@@ -1,0 +1,25 @@
+{
+    "question.dialog": [
+        "Omlouv\u00e1m se, s t\u00edm v\u00e1m nemohu pomoci.",
+        "Nev\u00edm jak bych v\u00e1m s t\u00edm pomohl.",
+        "Nerozum\u00edm, ale ka\u017ed\u00fd den se u\u010d\u00edm nov\u00e9 v\u011bci.",
+        "Nejsem si jist jak odpov\u011bd\u011bt."
+    ],
+    "why.is.dialog": [
+        "Nejsem si jist\u00fd jak bych v\u00e1m s t\u00edm mohl pomoci.",
+        "Nev\u00edm.",
+        "Nejsem si jist\u00fd."
+    ],
+    "who.is.dialog": [
+        "Nev\u00edm kdo to je.",
+        "Nejsem si jist\u00fd kdo to je."
+    ],
+    "unknown.dialog": [
+        "Omlouv\u00e1m se, nerozum\u00edm.",
+        "Nev\u00edm co to znamen\u00e1.",
+        "Nerozum\u00edm, ale ka\u017ed\u00fd den se u\u010d\u00edm nov\u00e9 v\u011bci.",
+        "Nerozum\u00edm.",
+        "M\u016f\u017ee\u0161 to \u0159\u00edci jin\u00fdm zp\u016fsobem?",
+        "Pros\u00edm, zopakuj to."
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Lo siento, no puedo ayudarte con eso.",
+        "No tengo claro c\u00f3mo puedo ayudarte con eso.",
+        "No lo entiendo, pero aprendo cosas nuevas cada d\u00eda.",
+        "No s\u00e9 como responder a eso."
+    ],
+    "why.is.dialog": [
+        "No tengo claro c\u00f3mo puedo ayudarte con eso.",
+        "No lo s\u00e9.",
+        "No estoy muy seguro.",
+        "No estoy seguro.",
+        "No estoy seguro, pero hago lo que puedo para aprenderlo."
+    ],
+    "who.is.dialog": [
+        "No s\u00e9 qui\u00e9n es ese.",
+        "No estoy seguro de qui\u00e9n es."
+    ],
+    "unknown.dialog": [
+        "No lo entiendo, pero aprendo cosas nuevas cada d\u00eda.",
+        "Lo siento, no entiendo.",
+        "No s\u00e9 qu\u00e9 significa eso.",
+        "Lo siento, no lo he pillado.",
+        "Disculpa, no lo entiendo.",
+        "No entiendo.",
+        "Creo que no te sigo.",
+        "Tal vez tengas que decir eso de otra manera.",
+        "Por favor reformula tu petici\u00f3n."
+    ]
+}

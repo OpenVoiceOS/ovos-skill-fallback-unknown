@@ -1,0 +1,24 @@
+{
+    "why.is.voc": [
+        "zergatik"
+    ],
+    "question.voc": [
+        "zer da|zer",
+        "zer egingo du|zer",
+        "zer egin zuen|zer",
+        "zer egiten du|zer",
+        "non dago|non",
+        "non egingo du|non",
+        "non",
+        "noiz da|noiz",
+        "noiz izango da|noiz",
+        "non",
+        "noiz",
+        "noiz"
+    ],
+    "who.is.voc": [
+        "(nor|zein) da",
+        "(nor|zein) zen ",
+        "(nor|zein) izan zen"
+    ]
+}

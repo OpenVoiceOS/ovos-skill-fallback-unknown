@@ -1,0 +1,23 @@
+{
+    "why.is.voc": [
+        "pro\u010d je",
+        "pro\u010d byl",
+        "pro\u010d bude"
+    ],
+    "question.voc": [
+        "co je",
+        "co bylo",
+        "co bude",
+        "kde je",
+        "kde bylo",
+        "kde bude",
+        "kdy je",
+        "kdy bylo",
+        "kdy bude"
+    ],
+    "who.is.voc": [
+        "kdo je",
+        "kdo byl",
+        "kdo bude"
+    ]
+}

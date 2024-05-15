@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "per qu\u00e8",
+        "per qu\u00e8",
+        "per qu\u00e8",
+        "per qu\u00e8",
+        "per qu\u00e8"
+    ],
+    "question.voc": [
+        "qu\u00e8 \u00e9s|qu\u00e8 s\u00f3n",
+        "qu\u00e8 ser\u00e0|qu\u00e8 seran|qu\u00e8",
+        "qu\u00e8 ha fet|qu\u00e8 va fer",
+        "qu\u00e8 fa",
+        "qu\u00e8 fa",
+        "on \u00e9s|on est\u00e0|on s\u00f3n|on estan",
+        "on ser\u00e0|on seran",
+        "(on|en quin lloc) (va ser|van ser|fou|foren)",
+        "(on|en quin lloc)",
+        "en quin lloc|on",
+        "quan \u00e9s",
+        "on ser\u00e0|quan ser\u00e0",
+        "quan (va ser|van ser|fou|foren)",
+        "quan",
+        "quan"
+    ],
+    "who.is.voc": [
+        "qui \u00e9s",
+        "qui ho far\u00e0",
+        "qui va fer",
+        "qui ",
+        "qui"
+    ]
+}

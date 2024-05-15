@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "D\u00e9sol\u00e9, ((pour le moment|) ce n'est pas dans mes comp\u00e9tences|je ne peux pas vous aider pour \u00e7a).",
+        "Je ne sais pas trop comment vous aider avec \u00e7a.",
+        "Je ne comprends pas, mais j'apprends de nouvelles choses tous les jours.",
+        "Je ne sais pas trop comment r\u00e9pondre \u00e0 \u00e7a."
+    ],
+    "why.is.dialog": [
+        "Je ne sais pas trop comment vous aider avec \u00e7a.",
+        "Je ne sais pas.",
+        "Je ne suis pas tout \u00e0 fait s\u00fbr.",
+        "Je ne suis pas s\u00fbr.",
+        "Je ne suis pas s\u00fbr, mais je fais de mon mieux pour apprendre."
+    ],
+    "who.is.dialog": [
+        "Je ne sais pas qui c'est.",
+        "Je ne suis pas s\u00fbr de savoir qui c'est."
+    ],
+    "unknown.dialog": [
+        "Je ne comprends pas, mais j'apprends de nouvelles choses tous les jours.",
+        "Je suis d\u00e9sol\u00e9, je ne comprends pas.",
+        "Je ne sais pas ce que \u00e7a veut dire.",
+        "D\u00e9sol\u00e9, je n'ai pas compris.",
+        "D\u00e9sol\u00e9, je ne comprends pas.",
+        "Je ne comprends pas.",
+        "Je ne suis pas s\u00fbr de vous avoir compris.",
+        "Vous devriez peut-\u00eatre dire \u00e7a d'une autre fa\u00e7on.",
+        "Merci de reformuler (la question|votre demande)."
+    ]
+}

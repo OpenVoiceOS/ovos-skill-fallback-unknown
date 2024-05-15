@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "I'm sorry I can't help you with that.",
+        "I'm not sure how to help you with that.",
+        "I don't understand, but I'm learning new things everyday.",
+        "I'm not sure how to answer that."
+    ],
+    "why.is.dialog": [
+        "I'm not sure how to help you with that.",
+        "I don't know.",
+        "I'm not quite sure.",
+        "I'm not sure.",
+        "I'm not sure, but I'm doing my best to learn."
+    ],
+    "who.is.dialog": [
+        "I don't know who that is.",
+        "I'm not sure who that is."
+    ],
+    "unknown.dialog": [
+        "I'm sorry, I don't understand.",
+        "I don't know what that means.",
+        "I don't understand, but I'm learning new things everyday.",
+        "Sorry, I didn't catch that.",
+        "Sorry, I don't understand.",
+        "I don't understand.",
+        "I'm not sure I understood you.",
+        "You might have to say that a different way.",
+        "Please rephrase your request."
+    ]
+}

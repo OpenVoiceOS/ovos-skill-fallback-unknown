@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "\u00cemi pare r\u0103u c\u0103 nu te pot ajuta cu asta.",
+        "Nu sunt sigur cum s\u0103 te ajut cu asta.",
+        "Nu \u00een\u021beleg, dar \u00eenv\u0103\u021b lucruri noi \u00een fiecare zi.",
+        "Nu sunt sigur cum s\u0103 r\u0103spund."
+    ],
+    "why.is.dialog": [
+        "Nu sunt sigur cum s\u0103 te ajut cu asta.",
+        "Nu \u0219tiu.",
+        "Nu sunt chiar sigur.",
+        "Nu sunt sigur.",
+        "Nu sunt sigur, dar fac tot ce pot pentru a \u00eenv\u0103\u021ba."
+    ],
+    "who.is.dialog": [
+        "Nu \u0219tiu cine este.",
+        "Nu sunt sigur cine este."
+    ],
+    "unknown.dialog": [
+        "Nu \u00een\u021beleg, dar \u00eenv\u0103\u021b lucruri noi \u00een fiecare zi.",
+        "\u00cemi pare r\u0103u, nu \u00een\u021beleg.",
+        "Nu \u0219tiu ce \u00eenseamn\u0103 asta.",
+        "Scuze, nu am prins asta.",
+        "\u00cemi pare r\u0103u, nu \u00een\u021beleg.",
+        "Nu \u00een\u021beleg.",
+        "Nu sunt sigur c\u0103 te-am \u00een\u021beles.",
+        "Ai putea \u00eencerca s\u0103 spui \u00een mod diferit.",
+        "V\u0103 rug\u0103m s\u0103 reformula\u021bi cererea dvs."
+    ]
+}

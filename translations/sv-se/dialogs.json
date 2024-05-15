@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Jag \u00e4r ledsen men jag kan inte hj\u00e4lpa till med detta.",
+        "Jag \u00e4r os\u00e4ker p\u00e5 hur jag ska hj\u00e4lpa dig med det d\u00e4r.",
+        "Jag f\u00f6rst\u00e5r inte, men jag l\u00e4r mig nya saker varje dag.",
+        "Jag kan inte svara p\u00e5 det."
+    ],
+    "why.is.dialog": [
+        "Jag \u00e4r os\u00e4ker p\u00e5 hur jag ska hj\u00e4lpa dig med det d\u00e4r.",
+        "Jag vet inte.",
+        "Jag \u00e4r lite os\u00e4ker.",
+        "Jag \u00e4r os\u00e4ker.",
+        "Jag vet inte, men jag g\u00f6r mitt b\u00e4sta f\u00f6r att l\u00e4ra mig."
+    ],
+    "who.is.dialog": [
+        "Jag vet inte vem det \u00e4r.",
+        "Jag \u00e4r os\u00e4ker p\u00e5 vem det \u00e4r."
+    ],
+    "unknown.dialog": [
+        "Jag f\u00f6rst\u00e5r inte, men jag l\u00e4r mig nya saker varje dag.",
+        "Jag \u00e4r ledsen, jag f\u00f6rst\u00e5r inte.",
+        "Jag f\u00f6rst\u00e5r inte vad det inneb\u00e4r.",
+        "Urs\u00e4kta, Jag uppfattade inte riktigt det d\u00e4r.",
+        "Jag \u00e4r ledsen, jag f\u00f6rst\u00e5r inte.",
+        "Jag f\u00f6rst\u00e5r inte.",
+        "Jag f\u00f6rstod dig nog inte.",
+        "Du kanske kan s\u00e4ga det d\u00e4r p\u00e5 ett annat s\u00e4tt.",
+        "Skulle du kunna omformulera din f\u00f6rfr\u00e5gan."
+    ]
+}

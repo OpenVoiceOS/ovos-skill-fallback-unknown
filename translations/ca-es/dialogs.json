@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Em sap greu, per\u00f2 no puc ajudar-vos en aix\u00f2.",
+        "No estic segur de com ajudar-vos amb aix\u00f2.",
+        "No us entenc, per\u00f2 aprenc coses noves cada dia.",
+        "No s\u00e9 com respondre a aix\u00f2."
+    ],
+    "why.is.dialog": [
+        "No estic segur de com ajudar-vos amb aix\u00f2.",
+        "No ho s\u00e9.",
+        "No n'estic molt segur.",
+        "No n'estic segur.",
+        "No estic segur, per\u00f2 faig tot el possible per aprendre."
+    ],
+    "who.is.dialog": [
+        "No s\u00e9 qui \u00e9s.",
+        "No estic segur de qui \u00e9s."
+    ],
+    "unknown.dialog": [
+        "No us entenc, per\u00f2 aprenc coses noves cada dia.",
+        "Ho sento, no ho entenc.",
+        "No s\u00e9 qu\u00e8 significa aix\u00f2.",
+        "Ho sento, no ho he ent\u00e8s.",
+        "Ho sento, no ho entenc.",
+        "No entenc.",
+        "No estic segur d'haver-vos ent\u00e8s",
+        "\u00c9s possible que h\u00e0giu de dir-ho d'una altra manera.",
+        "Reformuleu la sol\u00b7licitud."
+    ]
+}

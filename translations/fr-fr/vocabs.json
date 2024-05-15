@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "pourquoi est ce que",
+        "pourquoi sera",
+        "pourquoi",
+        "pourquoi",
+        "pourquoi faire"
+    ],
+    "question.voc": [
+        "quel est",
+        "quel sera",
+        "quel \u00e9tait",
+        "que fait",
+        "que fait",
+        "o\u00f9 est",
+        "o\u00f9 sera",
+        "o\u00f9 \u00e9tait",
+        "o\u00f9 est-ce que",
+        "o\u00f9 faire",
+        "quand est",
+        "quand sera",
+        "quand \u00e9tait",
+        "quand est-ce que",
+        "quand faire"
+    ],
+    "who.is.voc": [
+        "qui est",
+        "qui sera",
+        "qui \u00e9tait",
+        "qui fait",
+        "qui font"
+    ]
+}

@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "wieso ist",
+        "warum wird",
+        "warum machte",
+        "warum macht",
+        "warum machen"
+    ],
+    "question.voc": [
+        "was ist",
+        "was wird",
+        "was tat",
+        "was macht",
+        "was tust",
+        "wo ist",
+        "wo wird",
+        "wo wurde",
+        "woher kommt",
+        "wo tatest",
+        "wann ist",
+        "wann wird",
+        "wann hat",
+        "wann tut",
+        "wann machen"
+    ],
+    "who.is.voc": [
+        "wer ist",
+        "wer wird",
+        "wer machte",
+        "wer macht",
+        "wer macht"
+    ]
+}

@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Entschuldige, ich kann dir dabei nicht helfen.",
+        "Ich bin mir nicht sicher wie ich dir dabei helfen kann.",
+        "Ich verstehe das nicht, aber ich lerne jeden Tag neue Dinge.",
+        "Ich bin mir nicht sicher wie ich das beantworten soll."
+    ],
+    "why.is.dialog": [
+        "Ich bin mir nicht sicher wie ich dir dabei helfen kann.",
+        "Ich wei\u00df es nicht.",
+        "Ich bin mir nicht ganz sicher.",
+        "Ich bin mir nicht sicher.",
+        "Ich bin mir nicht sicher, aber ich gebe mein Bestes, zu lernen."
+    ],
+    "who.is.dialog": [
+        "Ich wei\u00df nicht, wer das ist.",
+        "Ich bin nicht sicher, wer das ist."
+    ],
+    "unknown.dialog": [
+        "Ich verstehe das nicht, aber ich lerne jeden Tag neue Dinge.",
+        "Es tut mir leid, ich verstehe nicht.",
+        "Ich wei\u00df nicht, was das bedeutet.",
+        "Entschuldigung, dass habe ich nicht verstanden.",
+        "Entschuldigung, ich verstehe nicht.",
+        "Ich verstehe nicht.",
+        "Ich bin nicht sicher, ob ich dich verstanden habe.",
+        "M\u00f6glicherweise musst du das anders sagen.",
+        "Bitte formuliere deinen Befehl um."
+    ]
+}

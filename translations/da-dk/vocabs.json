@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "hvorfor er",
+        "hvorfor vil",
+        "hvorfor g\u00f8re",
+        "hvorfor g\u00f8re",
+        "hvorfor g\u00f8re"
+    ],
+    "question.voc": [
+        "hvad er",
+        "hvad vil",
+        "hvad g\u00f8r",
+        "hvad g\u00f8r",
+        "hvad g\u00f8r",
+        "hvor er ",
+        "hvor vil",
+        "hvor skete",
+        "hvor sker",
+        "hvor sker",
+        "hvorn\u00e5r er",
+        "hvorn\u00e5r vil",
+        "hvorn\u00e5r skete",
+        "hvorn\u00e5r sker",
+        "hvorn\u00e5r sker"
+    ],
+    "who.is.voc": [
+        "Hvem er",
+        "hvem vil",
+        "hvem gjorde",
+        "hvem g\u00f8r",
+        "hvem g\u00f8r"
+    ]
+}

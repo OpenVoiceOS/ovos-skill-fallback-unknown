@@ -1,0 +1,33 @@
+{
+    "why.is.voc": [
+        "perch\u00e9 \u00e8",
+        "perch\u00e9 lo far\u00e0",
+        "perch\u00e9 lo ha fatto",
+        "perch\u00e9 lo fa",
+        "perch\u00e9 fare"
+    ],
+    "question.voc": [
+        "che cos'\u00e8",
+        "cosa sar\u00e0",
+        "cosa ha fatto",
+        "cosa fa",
+        "cosa fare",
+        "dove si trova",
+        "dove sar\u00e0",
+        "(dove \u00e8|dov'\u00e8) stato",
+        "dove va",
+        "dove",
+        "quando \u00e8",
+        "quando",
+        "quando \u00e8 (successo|successa|stato|stata)",
+        "quando lo fa",
+        "quando fai"
+    ],
+    "who.is.voc": [
+        "chi \u00e8",
+        "chi lo far\u00e0",
+        "chi ha fatto",
+        "chi fa",
+        "chi (lo|la) fa"
+    ]
+}

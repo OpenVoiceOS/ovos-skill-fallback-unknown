@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Me desculpe, eu n\u00e3o posso te ajudar com isso.",
+        "N\u00e3o sei como te ajudar com isso.",
+        "Eu n\u00e3o entendo, mas estou aprendendo coisas novas todos os dias.",
+        "N\u00e3o sei como responder isso."
+    ],
+    "why.is.dialog": [
+        "N\u00e3o sei como te ajudar com isso.",
+        "Eu n\u00e3o sei.",
+        "Eu n\u00e3o tenho tanta certeza.",
+        "N\u00e3o tenho certeza.",
+        "N\u00e3o tenho certeza, mas estou fazendo o meu melhor para aprender."
+    ],
+    "who.is.dialog": [
+        "Eu n\u00e3o sei quem \u00e9.",
+        "N\u00e3o tenho certeza de quem \u00e9."
+    ],
+    "unknown.dialog": [
+        "Eu n\u00e3o entendo, mas estou aprendendo coisas novas todos os dias.",
+        "Me desculpe, eu n\u00e3o entendo..",
+        "Eu n\u00e3o sei o que isso significa.",
+        "Desculpe, eu n\u00e3o entendi isso.",
+        "Desculpe, n\u00e3o entendi.",
+        "Eu n\u00e3o entendo",
+        "N\u00e3o tenho certeza se entendi voc\u00ea.",
+        "Voc\u00ea pode ter que dizer isso de uma maneira diferente.",
+        "Por favor, reformule o seu pedido"
+    ]
+}

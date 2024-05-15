@@ -1,0 +1,30 @@
+{
+    "question.dialog": [
+        "Sajn\u00e1lom, ebben nem seg\u00edthetek.",
+        "Nem tudom hogyan seg\u00edthetn\u00e9k ebben.",
+        "Ezt nem \u00e9rtem, de minden nap tanulok valami \u00fajat.",
+        "Nem tudom mit lehet v\u00e1laszolni erre."
+    ],
+    "why.is.dialog": [
+        "Nem tudom hogyan seg\u00edthetn\u00e9k ebben.",
+        "Nem tudom.",
+        "Nem igaz\u00e1n tudom.",
+        "Nem vagyok biztos benne.",
+        "Nem vagyok biztos benne, de igyekszem tanulni."
+    ],
+    "who.is.dialog": [
+        "Nem tudom hogy ki az.",
+        "Nem igaz\u00e1n tudom hogy ki az."
+    ],
+    "unknown.dialog": [
+        "Ezt nem \u00e9rtem, de minden nap tanulok valami \u00fajat.",
+        "Sajn\u00e1lom, nem \u00e9rtem.",
+        "Nem tudom hogy ez mit jelent.",
+        "Sajnos ez nem vil\u00e1gos nekem.",
+        "Sajnos ezt nem \u00e9rtem.",
+        "Nem \u00e9rtem.",
+        "Nem biztos hogy j\u00f3l \u00e9rtelek.",
+        "Mondd ezt m\u00e1sk\u00e9ppen!",
+        "K\u00e9rlek ezt fogalmazd \u00e1t!"
+    ]
+}
