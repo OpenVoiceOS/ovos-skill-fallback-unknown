@@ -1,0 +1,30 @@
+{
+  "question.dialog": [
+    "Lamento, não sei ajudá-lo com isso.",
+    "Não tenho certeza de como ajudar com isso.",
+    "Não entendo, mas aprendo coisas novas todos os dias.",
+    "Não sei como responder a isso."
+  ],
+  "why.is.dialog": [
+    "Não tenho certeza de como ajudá-lo com isso.",
+    "Não sei.",
+    "Eu não tenho a certeza.",
+    null,
+    "Não tenho a certeza, mas estou a fazer o meu melhor para aprender."
+  ],
+  "who.is.dialog": [
+    "Eu não sei quem é.",
+    "Não tenho certeza de quem é."
+  ],
+  "unknown.dialog": [
+    "Sinto muito, não entendo.",
+    "Eu não sei o que isso significa.",
+    "Não entendo, mas aprendo coisas novas todos os dias.",
+    "Desculpe, não entendi.",
+    "Desculpe, eu não entendo.",
+    "Eu não entendo.",
+    "Não tenho certeza se te entendi ",
+    "podes ter que dizer isso de uma maneira diferente para eu entender.",
+    "Por favor, reformule a sua pergunta"
+  ]
+}
