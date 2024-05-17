@@ -1,0 +1,33 @@
+{
+  "why.is.voc": [
+    "por que é",
+    "por que vai",
+    "porque",
+    null,
+    null
+  ],
+  "question.voc": [
+    "o que é",
+    "o que (vai|irá)",
+    "o que",
+    null,
+    null,
+    "Onde é",
+    "onde vai",
+    "onde foi",
+    "onde",
+    null,
+    "Quando é",
+    "quando será",
+    "quando foi",
+    "quando é que",
+    null
+  ],
+  "who.is.voc": [
+    "quem é",
+    "quem vai",
+    "quem foi",
+    "quem fez",
+    "Quem faz"
+  ]
+}
