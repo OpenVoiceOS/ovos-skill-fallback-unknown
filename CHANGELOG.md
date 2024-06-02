@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.4a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.4a2...HEAD)
+
+**Merged pull requests:**
+
+- pt-pt/translate [\#8](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/8) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+
+## [V0.0.4a2](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/V0.0.4a2) (2023-12-30)
+
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/V0.0.4a1...V0.0.4a2)
 
 **Merged pull requests:**
 
