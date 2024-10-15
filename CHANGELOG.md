@@ -6,6 +6,7 @@
 
 **Merged pull requests:**
 
+- fix:just triggering a release [\#10](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/10) ([JarbasAl](https://github.com/JarbasAl))
 - fix:update\_requirements [\#9](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/9) ([JarbasAl](https://github.com/JarbasAl))
 
 
