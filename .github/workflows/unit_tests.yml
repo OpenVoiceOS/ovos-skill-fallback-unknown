@@ -61,7 +61,7 @@ jobs:
           pip install ovos-plugin-manager
       - name: Run unittests
         run: |
-          pytest --cov=ovos-skill-fallback-unknown --cov-report xml test/unittests
+          pytest --cov=ovos-skill-fallback-unknown --cov-report xml test
       - name: Upload coverage
         env:
           CODECOV_TOKEN: ${{secrets.CODECOV_TOKEN}}
