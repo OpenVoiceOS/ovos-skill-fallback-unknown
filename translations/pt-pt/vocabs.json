@@ -3,25 +3,25 @@
     "por que é",
     "por que vai",
     "porque",
-    null,
-    null
+    "por que é que",
+    "porquê"
   ],
   "question.voc": [
     "o que é",
     "o que (vai|irá)",
     "o que",
-    null,
-    null,
+    "o quê",
+    "o que é que",
     "Onde é",
     "onde vai",
     "onde foi",
     "onde",
-    null,
+    "onde será",
     "Quando é",
     "quando será",
     "quando foi",
     "quando é que",
-    null
+    "quando é que é que"
   ],
   "who.is.voc": [
     "quem é",
