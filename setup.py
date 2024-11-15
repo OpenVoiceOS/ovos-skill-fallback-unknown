@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
-from setuptools import setup
+import os
 from os import walk, path
+
+from setuptools import setup
 
 URL = "https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown"
 SKILL_CLAZZ = "UnknownSkill"  # needs to match __init__.py class name
@@ -55,6 +57,19 @@ def get_version():
     return version
 
 
+def get_requirements(requirements_filename: str):
+    requirements_file = path.join(path.abspath(path.dirname(__file__)),
+                                  requirements_filename)
+    with open(requirements_file, 'r', encoding='utf-8') as r:
+        requirements = r.readlines()
+    requirements = [r.strip() for r in requirements if r.strip()
+                    and not r.strip().startswith("#")]
+    if 'MYCROFT_LOOSE_REQUIREMENTS' in os.environ:
+        print('USING LOOSE REQUIREMENTS!')
+        requirements = [r.replace('==', '>=').replace('~=', '>=') for r in requirements]
+    return requirements
+
+
 setup(
     name=PYPI_NAME,
     version=get_version(),
@@ -68,6 +83,7 @@ setup(
     package_data={SKILL_PKG: find_resource_files()},
     packages=[SKILL_PKG],
     include_package_data=True,
+    install_requires=get_requirements("requirements.txt"),
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )
