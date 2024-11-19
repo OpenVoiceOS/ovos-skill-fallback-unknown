@@ -1,20 +1,12 @@
 # Changelog
 
-## [0.1.4a1](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/0.1.4a1) (2024-11-15)
+## [0.1.5a1](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/0.1.5a1) (2024-11-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/0.1.4a1...0.1.4a1)
-
-**Merged pull requests:**
-
-- fix: manifest and automations [\#15](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/15) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.4a1](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/0.1.4a1) (2024-11-15)
-
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/0.1.3...0.1.4a1)
+[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/0.1.4...0.1.5a1)
 
 **Merged pull requests:**
 
-- pt-pt/translate [\#14](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/14) ([gitlocalize-app[bot]](https://github.com/apps/gitlocalize-app))
+- fix:allow workshop 3.0.0 [\#16](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/16) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
