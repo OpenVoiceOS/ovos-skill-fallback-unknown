@@ -1,30 +1,30 @@
 {
     "question.dialog": [
-        "S\u00edntoo moito, eu non che podo axudar con isto.",
-        "Non sei con axudarche con isto.",
-        "Eu non te entendo, mais estou aprendendo cousas novas todos os d\u00edas.",
-        "Non sei como responder a iso."
+        "Non comprendo. Mais estou a aprender cousas novas todos os días.",
+        "Non che sei moi ben que resposta dar.",
+        "Non sei como podo axudarche con iso.",
+        "Sinto non poder axudarche con iso."
     ],
     "why.is.dialog": [
-        "Non sei con axudarche con isto.",
-        "Non o sei.",
-        "Non estou tan seguro.",
+        "Non sei.",
+        "Non estou moi seguro.",
+        "Non sei moi ben como axudarche con iso.",
         "Non estou seguro.",
-        "Non estou seguro, mais estou dando o meu m\u00e1ximo para seguir aprendendo."
+        "Non estou seguro. Mais vou facer o mellor que poida para aprender."
     ],
     "who.is.dialog": [
-        "Non sei quen es.",
-        "Non estou seguro de quen es."
+        "Non sei quen é ese.",
+        "Non estou moi seguro de quen é ese."
     ],
     "unknown.dialog": [
-        "Eu non te entendo, mais estou aprendendo cousas novas todos os d\u00edas.",
-        "Desc\u00falpame, eu non entendo.",
         "Non sei o que significa iso.",
-        "Desculpa, eu non entend\u00edn iso.",
-        "Desculpa, non entend\u00edn.",
-        "Non o entend\u00edn.",
-        "Non estou seguro de se te entend\u00edn.",
-        "Podes dicir iso dunha maneira diferente.",
-        "Por favor, reformula a t\u00faa petici\u00f3n."
+        "Non entendo.",
+        "Non entendo, mais estou a aprender cousas novas todos os días.",
+        "Non sei moi ben se te entendín.",
+        "Síntoo. Non entendo.",
+        "Reformula a petición.",
+        "Síntoo. Non entendín.",
+        "Síntoo. Non entendo.",
+        "Se cadra tes que dicilo doutro xeito."
     ]
 }
