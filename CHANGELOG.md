@@ -1,12 +1,20 @@
 # Changelog
 
-## [0.1.6a1](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/tree/0.1.6a1) (2024-12-02)
+## [0.1.6a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a2) (2024-12-02)
 
-[Full Changelog](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/compare/0.1.5...0.1.6a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a1...0.1.6a2)
 
 **Merged pull requests:**
 
-- import galician translations [\#18](https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+- import basque translations [\#20](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.6a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a1) (2024-12-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.5...0.1.6a1)
+
+**Merged pull requests:**
+
+- import galician translations [\#18](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/18) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
