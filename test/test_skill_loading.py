@@ -10,7 +10,7 @@ from skill_ovos_fallback_unknown import UnknownSkill
 class TestSkillLoading(unittest.TestCase):
     @classmethod
     def setUpClass(self):
-        self.skill_id = "skill-ovos-fallback-unknown.openvoiceos"
+        self.skill_id = "ovos-skill-fallback-unknown.openvoiceos"
         self.path = dirname(dirname(__file__))
 
     def test_from_class(self):

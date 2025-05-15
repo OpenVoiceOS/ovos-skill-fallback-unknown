@@ -1,24 +1,33 @@
 {
     "why.is.voc": [
-        "zergatik"
+        "zergatik... (nuen|nintzen|zuen|zen|genuen|ginen|zenuen|zinen|zenuten|zineten|zuten|ziren)",
+        "zergatik... (dut|naiz|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "zergatik... (du|da)",
+        "zergatik da",
+        "zergatik... -(g|k)o (dut|naiz|du|da|dugu|gara|duzu|zara|duzue|zarete|dute|dira)"
     ],
     "question.voc": [
-        "zer da|zer",
-        "zer egingo du|zer",
-        "zer egin zuen|zer",
-        "zer egiten du|zer",
-        "non dago|non",
-        "non egingo du|non",
-        "non",
-        "noiz da|noiz",
-        "noiz izango da|noiz",
-        "non",
-        "noiz",
-        "noiz"
+        "zer da",
+        "zer... (nuen|nintzen|zuen|zen|genuen|ginen|zenuen|zinen|zenuten|zineten|zuten|ziren)",
+        "zer... (dut|naiz|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "zer... (du|da)",
+        "zer... -(g|k)o (dut|naiz|du|da|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "noiz... (nuen|nintzen|zuen|zen|genuen|ginen|zenuen|zinen|zenuten|zineten|zuten|ziren)",
+        "noiz... (dut|naiz|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "noiz... (du|da)",
+        "noiz da",
+        "noiz... -(g|k)o (dut|naiz|du|da|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "non... (nuen|nintzen|zuen|zen|genuen|ginen|zenuen|zinen|zenuten|zineten|zuten|ziren)",
+        "non... (dut|naiz|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "non... (du|da)",
+        "non da",
+        "non -(g|k)o (dut|naiz|du|da|dugu|gara|duzu|zara|duzue|zarete|dute|dira)"
     ],
     "who.is.voc": [
-        "(nor|zein) da",
-        "(nor|zein) zen ",
-        "(nor|zein) izan zen"
+        "(nor|nork)... (nuen|nintzen|zuen|zen|genuen|ginen|zenuen|zinen|zenuten|zineten|zuten|ziren)",
+        "(nor|nork)... (dut|naiz|dugu|gara|duzu|zara|duzue|zarete|dute|dira)",
+        "(nor|nork)... (da|du)",
+        "(nor|nork)... (da|du)",
+        "(nor|nork)... -(g|k)o (dut|naiz|du|da|dugu|gara|duzu|zara|duzue|zarete|dute|dira)"
     ]
 }
