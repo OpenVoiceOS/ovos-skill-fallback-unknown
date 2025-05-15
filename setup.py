@@ -4,7 +4,7 @@ from os import walk, path
 
 from setuptools import setup
 
-URL = "https://github.com/OpenVoiceOS/skill-ovos-fallback-unknown"
+URL = "https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown"
 SKILL_CLAZZ = "UnknownSkill"  # needs to match __init__.py class name
 PYPI_NAME = "ovos-skill-fallback-unknown"  # pip install PYPI_NAME
 
