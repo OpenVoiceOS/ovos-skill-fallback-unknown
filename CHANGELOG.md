@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.6a5](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a5) (2025-05-15)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a4...0.1.6a5)
+
+**Merged pull requests:**
+
+- fix: standardize urls / skill-id / pypi-name [\#25](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/25) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.6a4](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a4) (2025-02-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a3...0.1.6a4)
+
 ## [0.1.6a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a3) (2025-01-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a2...0.1.6a3)
