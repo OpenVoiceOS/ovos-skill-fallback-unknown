@@ -1,40 +1,12 @@
 # Changelog
 
-## [0.1.6a5](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a5) (2025-05-15)
+## [0.1.7a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.7a1) (2025-06-07)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a4...0.1.6a5)
-
-**Merged pull requests:**
-
-- fix: standardize urls / skill-id / pypi-name [\#25](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/25) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.6a4](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a4) (2025-02-27)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a3...0.1.6a4)
-
-## [0.1.6a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a3) (2025-01-25)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a2...0.1.6a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6...0.1.7a1)
 
 **Merged pull requests:**
 
-- fix automations [\#22](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/22) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.6a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a2) (2024-12-02)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6a1...0.1.6a2)
-
-**Merged pull requests:**
-
-- import basque translations [\#20](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/20) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.6a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.6a1) (2024-12-02)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.5...0.1.6a1)
-
-**Merged pull requests:**
-
-- import galician translations [\#18](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/18) ([JarbasAl](https://github.com/JarbasAl))
+- fix: implement can\_answer [\#27](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/27) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
