@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
+from typing import List
 from ovos_workshop.skills.fallback import FallbackSkill
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
@@ -32,6 +32,12 @@ class UnknownSkill(FallbackSkill):
                                    no_network_fallback=True,
                                    no_gui_fallback=True)
 
+    def can_stop(self, message: Message) -> bool:
+        return False
+
+    def can_answer(self, message: Message) -> bool:
+        return True
+         
     @fallback_handler(priority=100)
     def handle_fallback(self, message):
         utterance = message.data['utterance'].lower()
@@ -42,4 +48,3 @@ class UnknownSkill(FallbackSkill):
                 break
         else:
             self.speak_dialog('unknown')
-        return True
