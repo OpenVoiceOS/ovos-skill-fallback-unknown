@@ -31,8 +31,11 @@ class UnknownSkill(FallbackSkill):
                                    no_internet_fallback=True,
                                    no_network_fallback=True,
                                    no_gui_fallback=True)
-        
-    def can_answer(self, utterances: List[str], lang: str) -> bool:
+
+    def can_stop(self, message: Message) -> bool:
+        return False
+
+    def can_answer(self, message: Message) -> bool:
         return True
          
     @fallback_handler(priority=100)
@@ -45,4 +48,3 @@ class UnknownSkill(FallbackSkill):
                 break
         else:
             self.speak_dialog('unknown')
-        return True
