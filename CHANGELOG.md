@@ -1,20 +1,12 @@
 # Changelog
 
-## [0.1.7a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.7a2) (2025-06-07)
+## [0.1.8a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.8a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.7a1...0.1.7a2)
-
-**Merged pull requests:**
-
-- fix: workshop 6.0.0 compat [\#29](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/29) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.1.7a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.7a1) (2025-06-07)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.6...0.1.7a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.7...0.1.8a1)
 
 **Merged pull requests:**
 
-- fix: implement can\_answer [\#27](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/27) ([JarbasAl](https://github.com/JarbasAl))
+- fix: workshop 7.X.X [\#31](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/31) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
