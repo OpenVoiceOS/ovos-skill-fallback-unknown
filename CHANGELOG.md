@@ -1,12 +1,13 @@
 # Changelog
 
-## [0.1.9a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.9a1) (2025-06-09)
+## [0.1.10a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.10a1) (2026-04-04)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.8...0.1.9a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.9...0.1.10a1)
 
 **Merged pull requests:**
 
-- fix: missing import [\#33](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/33) ([JarbasAl](https://github.com/JarbasAl))
+- ci: modernize GitHub workflows [\#40](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/40) ([JarbasAl](https://github.com/JarbasAl))
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#39](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/39) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
