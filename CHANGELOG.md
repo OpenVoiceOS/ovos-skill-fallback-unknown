@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.10a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.10a2) (2026-04-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.10a1...0.1.10a2)
+
+**Merged pull requests:**
+
+- chore\(ovos-skill-fallback-unknown\): allow ovos-workshop\<9.0.0 [\#42](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/42) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.10a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.10a1) (2026-04-04)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.9...0.1.10a1)
