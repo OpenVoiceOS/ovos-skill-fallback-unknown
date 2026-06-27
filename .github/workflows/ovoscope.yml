@@ -13,3 +13,9 @@ jobs:
       python_version: '3.11'
       install_extras: 'test'
       test_path: 'test/end2end/'
+      require_padatious: true
+      # mirrors the proven spec-program harness pin-set: forces the exact
+      # cross-repo branches (core/workshop/bus-client/pipeline plugins/ovoscope
+      # + companion skills) AFTER .[test] so the end2end stack is reproducible;
+      # the skill's own source still wins via the workflow's final local `.` reinstall.
+      post_install_pip: "git+https://github.com/OpenVoiceOS/ovos-core@test/spec-stack-integration-proof git+https://github.com/OpenVoiceOS/ovos-workshop@feat/intent-4-producer git+https://github.com/OpenVoiceOS/ovos-bus-client@feat/session-spec-fields git+https://github.com/OpenVoiceOS/ovos-adapt-pipeline-plugin@fix/allow-ovos-workshop-9 git+https://github.com/OpenVoiceOS/ovos-padatious-pipeline-plugin@fix/allow-ovos-workshop-9 git+https://github.com/OpenVoiceOS/padacioso@fix/bus-client-2x-unhashable-session git+https://github.com/OpenVoiceOS/ovoscope@dev git+https://github.com/OpenVoiceOS/ovos-skill-parrot@fix/allow-ovos-workshop-10 git+https://github.com/OpenVoiceOS/ovos-skill-count@fix/allow-ovos-workshop-10 git+https://github.com/OpenVoiceOS/ovos-skill-hello-world@dev"

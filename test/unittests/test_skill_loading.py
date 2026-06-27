@@ -4,14 +4,19 @@ from os.path import dirname
 from ovos_plugin_manager.skills import find_skill_plugins
 from ovos_utils.messagebus import FakeBus
 from ovos_workshop.skill_launcher import PluginSkillLoader, SkillLoader
-from skill_ovos_fallback_unknown import UnknownSkill
+
+import ovos_skill_fallback_unknown
+from ovos_skill_fallback_unknown import UnknownSkill
 
 
 class TestSkillLoading(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.skill_id = "ovos-skill-fallback-unknown.openvoiceos"
-        self.path = dirname(dirname(__file__))
+        # this is a packaged skill: the source (__init__.py) + locale live inside
+        # the ``ovos_skill_fallback_unknown`` package directory, not at the repo
+        # root, so the SkillLoader must be pointed at the package dir.
+        self.path = dirname(ovos_skill_fallback_unknown.__file__)
 
     def test_from_class(self):
         bus = FakeBus()
