@@ -7,25 +7,32 @@ from setuptools import setup
 URL = "https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown"
 SKILL_CLAZZ = "UnknownSkill"  # needs to match __init__.py class name
 PYPI_NAME = "ovos-skill-fallback-unknown"  # pip install PYPI_NAME
+SKILL_PKG = PYPI_NAME.lower().replace('-', '_')  # import name
 
-# below derived from github url to ensure standard skill_id
-SKILL_AUTHOR, SKILL_NAME = URL.split(".com/")[-1].split("/")
-SKILL_PKG = SKILL_NAME.lower().replace('-', '_')
+SKILL_AUTHOR, SKILL_NAME = URL.split(".com/")[-1].split("/")  # derived from github url to ensure standard skill_id
 PLUGIN_ENTRY_POINT = f'{SKILL_NAME.lower()}.{SKILL_AUTHOR.lower()}={SKILL_PKG}:{SKILL_CLAZZ}'
-# skill_id=package_name:SkillClass
+
+
+def get_requirements(requirements_filename: str):
+    requirements_file = path.join(path.abspath(path.dirname(__file__)), requirements_filename)
+    with open(requirements_file, 'r', encoding='utf-8') as r:
+        requirements = r.readlines()
+    requirements = [r.strip() for r in requirements if r.strip() and not r.strip().startswith("#")]
+    return requirements
 
 
 def find_resource_files():
     resource_base_dirs = ("locale",)
-    base_dir = path.dirname(__file__)
+    base_dir = path.join(os.path.dirname(__file__), SKILL_PKG)
     package_data = ["*.json"]
+
     for res in resource_base_dirs:
-        if path.isdir(path.join(base_dir, res)):
-            for (directory, _, files) in walk(path.join(base_dir, res)):
+        res_dir = path.join(base_dir, res)
+        if path.isdir(res_dir):
+            for (directory, _, files) in walk(res_dir):
                 if files:
-                    package_data.append(
-                        path.join(directory.replace(base_dir, "").lstrip('/'),
-                                  '*'))
+                    relative_dir = directory.replace(base_dir + os.sep, "")
+                    package_data.append(path.join(relative_dir, "*"))
     return package_data
 
 
@@ -35,7 +42,7 @@ with open(path.join(path.abspath(path.dirname(__file__)), "README.md"), "r") as 
 
 def get_version():
     """ Find the version of this skill"""
-    version_file = path.join(path.dirname(__file__), 'version.py')
+    version_file = os.path.join(os.path.dirname(__file__), SKILL_PKG, 'version.py')
     major, minor, build, alpha = (None, None, None, None)
     with open(version_file) as f:
         for line in f:
@@ -57,19 +64,6 @@ def get_version():
     return version
 
 
-def get_requirements(requirements_filename: str):
-    requirements_file = path.join(path.abspath(path.dirname(__file__)),
-                                  requirements_filename)
-    with open(requirements_file, 'r', encoding='utf-8') as r:
-        requirements = r.readlines()
-    requirements = [r.strip() for r in requirements if r.strip()
-                    and not r.strip().startswith("#")]
-    if 'MYCROFT_LOOSE_REQUIREMENTS' in os.environ:
-        print('USING LOOSE REQUIREMENTS!')
-        requirements = [r.replace('==', '>=').replace('~=', '>=') for r in requirements]
-    return requirements
-
-
 setup(
     name=PYPI_NAME,
     version=get_version(),
@@ -79,15 +73,11 @@ setup(
     author=SKILL_AUTHOR,
     author_email='jarbasai@mailfence.com',
     license='Apache-2.0',
-    package_dir={SKILL_PKG: ""},
-    package_data={SKILL_PKG: find_resource_files()},
     packages=[SKILL_PKG],
+    package_data={SKILL_PKG: find_resource_files()},
     include_package_data=True,
     install_requires=get_requirements("requirements.txt"),
-    extras_require={
-        "test": get_requirements("test/requirements.txt"),
-        "end2end": get_requirements("test/requirements-end2end.txt"),
-    },
+    extras_require={"test": get_requirements("test/requirements.txt")},
     keywords='ovos skill plugin',
     entry_points={'ovos.plugin.skill': PLUGIN_ENTRY_POINT}
 )

@@ -49,6 +49,11 @@ class TestUnknownFallback(TestCase):
             Message("ovos.skills.fallback.pong",
                     {"skill_id": self.skill_id, "can_handle": True},
                     {"skill_id": self.skill_id}),
+            # the pipeline reports the fallback "intent" it resolved to
+            Message("ovos.intent.matched",
+                    {"intent_name": f"ovos.skills.fallback.{self.skill_id}.request",
+                     "pipeline_id": "ovos-fallback-pipeline-plugin-low",
+                     "utterance": "blleerghh foo bar"}),
             # the highest-priority capable fallback (this skill) is invoked
             Message(f"ovos.skills.fallback.{self.skill_id}.request",
                     {"skill_id": self.skill_id}),
