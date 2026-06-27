@@ -4,14 +4,14 @@ from os.path import dirname
 from ovos_plugin_manager.skills import find_skill_plugins
 from ovos_utils.messagebus import FakeBus
 from ovos_workshop.skill_launcher import PluginSkillLoader, SkillLoader
-from skill_ovos_fallback_unknown import UnknownSkill
+from ovos_skill_fallback_unknown import UnknownSkill
 
 
 class TestSkillLoading(unittest.TestCase):
     @classmethod
     def setUpClass(self):
         self.skill_id = "ovos-skill-fallback-unknown.openvoiceos"
-        self.path = dirname(dirname(__file__))
+        self.path = dirname(dirname(dirname(__file__)))
 
     def test_from_class(self):
         bus = FakeBus()
