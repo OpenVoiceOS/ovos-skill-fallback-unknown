@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.1.11a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.11a1) (2026-06-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.10a2...0.1.11a1)
+
+**Fixed bugs:**
+
+- Fix packaged locale resources [\#44](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/44) ([goldyfruit](https://github.com/goldyfruit))
+
+**Merged pull requests:**
+
+- fix\(ci\): point release workflows at ovos\_skill\_fallback\_unknown/version.py [\#46](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/46) ([JarbasAl](https://github.com/JarbasAl))
+- fix: allow ovos-workshop 9.x [\#45](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/45) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.10a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.10a2) (2026-04-09)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.10a1...0.1.10a2)
