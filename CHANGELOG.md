@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a1) (2026-07-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.11a1...0.1.12a1)
+
+**Merged pull requests:**
+
+- fix: rename entry-point group to opm.skill [\#48](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/48) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.11a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.11a1) (2026-06-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.10a2...0.1.11a1)
