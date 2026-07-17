@@ -21,8 +21,11 @@ class TestUnknownFallback(TestCase):
         self.skill_id = "ovos-skill-fallback-unknown.openvoiceos"
         self.minicroft = get_minicroft([self.skill_id])
         # the spoken 'unknown' dialog text is randomized, so we never assert on
-        # it; ignore both the legacy and the migrated (ovos.*) speak topics
-        self.ignore_messages = ["speak", "ovos.utterance.speak"]
+        # it; ignore both the legacy and the migrated (ovos.*) speak topics, plus
+        # the TTS playback boundaries (AUDIO-1 §5) that bracket that speech
+        self.ignore_messages = ["speak", "ovos.utterance.speak",
+                                "recognizer_loop:audio_output_start",
+                                "recognizer_loop:audio_output_end"]
 
     def tearDown(self):
         if self.minicroft:
@@ -49,19 +52,28 @@ class TestUnknownFallback(TestCase):
             Message("ovos.skills.fallback.pong",
                     {"skill_id": self.skill_id, "can_handle": True},
                     {"skill_id": self.skill_id}),
-            # the pipeline reports the fallback "intent" it resolved to
+            # INTENT §8.1: the dispatcher reports the fallback "intent" it
+            # resolved to and brackets the handler with the ovos.intent.* lifecycle
             Message("ovos.intent.matched",
                     {"intent_name": f"ovos.skills.fallback.{self.skill_id}.request",
                      "pipeline_id": "ovos-fallback-pipeline-plugin-low",
                      "utterance": "blleerghh foo bar"}),
+            Message("ovos.intent.handler.start",
+                    {"intent_name": f"ovos.skills.fallback.{self.skill_id}.request"}),
             # the highest-priority capable fallback (this skill) is invoked
             Message(f"ovos.skills.fallback.{self.skill_id}.request",
                     {"skill_id": self.skill_id}),
             Message(f"ovos.skills.fallback.{self.skill_id}.start", {}),
+            Message("mycroft.skill.handler.start",
+                    {"handler": f"{self.skill_id}.fallback"}),
             # here the skill speaks the randomized 'unknown' dialog (ignored)
             Message(f"ovos.skills.fallback.{self.skill_id}.response",
                     {"result": False,
                      "fallback_handler": "UnknownSkill.handle_fallback"}),
+            Message("mycroft.skill.handler.complete",
+                    {"handler": f"{self.skill_id}.fallback"}),
+            Message("ovos.intent.handler.complete",
+                    {"intent_name": f"ovos.skills.fallback.{self.skill_id}.request"}),
             Message("ovos.utterance.handled", {}),
         ]
 
