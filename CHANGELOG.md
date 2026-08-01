@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a2) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a1...0.1.12a2)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#50](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/50) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.12a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a1) (2026-07-17)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.11a1...0.1.12a1)
