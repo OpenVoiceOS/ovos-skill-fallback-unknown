@@ -2,8 +2,7 @@
 Capture unrecognized _Utterances_
 
 ## About
-OpenVoiceOS doesn't know how to do or answer everything (yet).  This _fallback_ is how the assistant lets you know that, unfortunately, it can't help with what you said.
-
+OpenVoiceOS cannot answer every question yet. This fallback skill tells the user when the assistant cannot help with what they said. The pipeline in [OpenVoiceOS/ovos-core](https://github.com/OpenVoiceOS/ovos-core) calls this skill only after every other intent parser and fallback skill fails to match the utterance.
 
 ## Category
 **Configuration**
