@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "zer... zuten", "lang": "eu-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "noiz... -go dute", "lang": "eu-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "zer... -go dut", "lang": "eu-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "nork... -ko duzu", "lang": "eu-ES", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "nork... -go du", "lang": "eu-ES", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "nor... -ko zarete", "lang": "eu-ES", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "zergatik... -go duzue", "lang": "eu-ES", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "zergatik... dira", "lang": "eu-ES", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "zergatik... du", "lang": "eu-ES", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
