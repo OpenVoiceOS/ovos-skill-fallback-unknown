@@ -1,0 +1,6 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué es|qué", "lang": "es-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué hizo|qué", "lang": "es-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "dónde lo hará|dónde", "lang": "es-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién es|quién", "lang": "es-ES", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién", "lang": "es-ES", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué", "lang": "es-ES", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
