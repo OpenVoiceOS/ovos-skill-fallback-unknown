@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.12a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a3) (2026-08-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a2...0.1.12a3)
+
+**Merged pull requests:**
+
+- test: locale-template validation + per-locale e2e fallback coverage [\#52](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/52) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.12a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a2) (2026-08-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a1...0.1.12a2)
