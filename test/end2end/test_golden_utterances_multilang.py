@@ -135,30 +135,15 @@ def _golden_id(row):
     return f"{row['lang']}-{row['expected_dialog']}-{row['utterance']}"
 
 
-# Real routing defects reproduced by this pass, kept pinned rather than
-# silently dropped or weakened. Root cause (verified via
-# ovos_workshop.skills.fallback.FallbackSkill.voc_match source, default
-# exact=False): voc_match is a *substring* containment check, not a
-# whole-utterance match, and the skill's own handle_fallback checks
-# ['question', 'who.is', 'why.is'] in that fixed order (see
-# ovos_skill_fallback_unknown/__init__.py). In gl-ES and ro-RO, the
-# question.voc entries "que"/"ce este"/"ce va"/"ce a făcut" are legitimate,
-# narrower phrasings ("what is"/"what did") that also happen to be literal
-# substrings of the corresponding why.is.voc phrases ("por que
-# será"/"de ce este"/"de ce va"/"de ce a făcut" = "why will"/"why
-# is"/"why will"/"why did"), so "question" always wins the race before
-# "why.is" is even checked. This is not a vocab typo to trim: removing
-# those question.voc entries would delete real, narrower "what"-question
-# coverage those locales otherwise lack, and the fixed check order is
-# skill code, not locale content (out of scope for a locale-only pass).
-KNOWN_BUGS = {
-    ("gl-ES", "por que será"): "question.voc's bare 'que' entry is a substring of this why.is phrase and is checked first (fixed ['question','who.is','why.is'] order); see module comment above",
-    ("gl-ES", "por que é"): "same question.voc 'que' substring-precedence issue as 'por que será' above",
-    ("gl-ES", "por que fan"): "same question.voc 'que' substring-precedence issue as 'por que será' above",
-    ("ro-RO", "de ce va"): "question.voc's 'ce va' entry is a substring of this why.is phrase and is checked first (fixed ['question','who.is','why.is'] order); see module comment above",
-    ("ro-RO", "de ce a făcut"): "question.voc's 'ce a făcut' entry is a substring of this why.is phrase, same precedence issue as 'de ce va' above",
-    ("ro-RO", "de ce este"): "question.voc's 'ce este' entry is a substring of this why.is phrase, same precedence issue as 'de ce va' above",
-}
+# Regression pin for real routing defects previously reproduced by this
+# pass (gl-ES/ro-RO "que"/"ce este"/"ce va"/"ce a făcut" question.voc
+# entries being literal substrings of the corresponding why.is.voc
+# phrases). handle_fallback() now evaluates all three vocab classes and
+# picks the *longest* matched phrase instead of the first one checked in
+# fixed ['question', 'who.is', 'why.is'] order, so those rows pass outright
+# and no longer need an entry here. Kept as an empty, ready-to-use
+# mechanism for any future locale/order regression.
+KNOWN_BUGS = {}
 
 
 @pytest.mark.timeout(300)
