@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.13a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.13a1) (2026-08-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a3...0.1.13a1)
+
+**Merged pull requests:**
+
+- fix: fallback-unknown picks longest voc match instead of fixed check order [\#54](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/54) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.12a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a3) (2026-08-12)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a2...0.1.12a3)
