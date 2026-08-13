@@ -11,7 +11,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import re
+
 from ovos_bus_client.message import Message
+from ovos_utils.text_utils import remove_accents_and_punct
 from ovos_workshop.skills.fallback import FallbackSkill
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
@@ -38,13 +41,47 @@ class UnknownSkill(FallbackSkill):
     def can_answer(self, message: Message) -> bool:
         return True
          
+    def _longest_voc_match(self, utterance, voc_filename):
+        """
+        Return the length of the longest vocab sample (normalized, accents
+        and punctuation stripped) from ``voc_filename`` that matches
+        ``utterance`` as a whole word/phrase, or -1 if none match.
+
+        voc_match() only tells us whether *any* sample matched, not which
+        one nor how long it was, so this replicates its exact matching
+        semantics (default exact=False -> whole-word substring containment,
+        see ovos_workshop.skills.ovos.OVOSSkill.voc_match) to let the caller
+        compare match specificity across multiple vocab classes.
+        """
+        try:
+            vocs = self.voc_list(voc_filename, self.lang)
+        except FileNotFoundError:
+            return -1
+        norm_utt = remove_accents_and_punct(utterance)
+        best = -1
+        for v in vocs:
+            norm_v = remove_accents_and_punct(v)
+            if re.match(r'.*\b' + re.escape(norm_v) + r'\b.*', norm_utt, re.IGNORECASE):
+                best = max(best, len(norm_v))
+        return best
+
     @fallback_handler(priority=100)
     def handle_fallback(self, message):
         utterance = message.data['utterance'].lower()
-        for i in ['question', 'who.is', 'why.is']:
-            if self.voc_match(utterance, i):
-                self.log.debug('Fallback type: ' + i)
-                self.speak_dialog(i)
-                break
+        # Evaluate all vocab classes and let the longest matched phrase win,
+        # so a narrower phrase (eg. gl-ES "que") doesn't shadow a longer,
+        # more specific phrase that contains it (eg. "por que será"). Ties
+        # are broken by the original fixed check order.
+        order = ['question', 'who.is', 'why.is']
+        best_type = None
+        best_len = -1
+        for i in order:
+            match_len = self._longest_voc_match(utterance, i)
+            if match_len > best_len:
+                best_len = match_len
+                best_type = i
+        if best_type is not None and best_len >= 0:
+            self.log.debug('Fallback type: ' + best_type)
+            self.speak_dialog(best_type)
         else:
             self.speak_dialog('unknown')
