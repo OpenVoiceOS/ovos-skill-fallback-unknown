@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.13a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.13a2) (2026-08-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.13a1...0.1.13a2)
+
+**Merged pull requests:**
+
+- fix: bare top-level pipe alternations in voc files never expanded [\#56](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/56) ([JarbasAl](https://github.com/JarbasAl))
+- translate\(it-IT\): update why.is.voc [\#38](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/38) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update who.is.voc [\#37](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/37) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update unknown.dialog [\#36](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/36) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update question.voc [\#35](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/35) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+
 ## [0.1.13a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.13a1) (2026-08-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a3...0.1.13a1)
