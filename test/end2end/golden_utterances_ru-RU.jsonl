@@ -1,0 +1,5 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "когда", "lang": "ru-RU", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "где", "lang": "ru-RU", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "что", "lang": "ru-RU", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "кто", "lang": "ru-RU", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "почему", "lang": "ru-RU", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}

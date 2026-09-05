@@ -1,12 +1,94 @@
 # Changelog
 
-## [0.1.9a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.9a1) (2025-06-09)
+## [0.1.14a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.14a2) (2026-09-05)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.8...0.1.9a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.14a1...0.1.14a2)
 
 **Merged pull requests:**
 
-- fix: missing import [\#33](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/33) ([JarbasAl](https://github.com/JarbasAl))
+- refactor: use ovos\_workshop voc\_match\_span for category matching [\#58](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/58) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.14a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.14a1) (2026-09-05)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.13a2...0.1.14a1)
+
+**Merged pull requests:**
+
+- fix: close it-IT/eu-ES vocab gaps failing golden multilang e2e tests [\#59](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/59) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.13a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.13a2) (2026-08-26)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.13a1...0.1.13a2)
+
+**Merged pull requests:**
+
+- fix: bare top-level pipe alternations in voc files never expanded [\#56](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/56) ([JarbasAl](https://github.com/JarbasAl))
+- translate\(it-IT\): update why.is.voc [\#38](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/38) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update who.is.voc [\#37](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/37) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update unknown.dialog [\#36](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/36) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+- translate\(it-IT\): update question.voc [\#35](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/35) ([ovos-localize[bot]](https://github.com/apps/ovos-localize))
+
+## [0.1.13a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.13a1) (2026-08-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a3...0.1.13a1)
+
+**Merged pull requests:**
+
+- fix: fallback-unknown picks longest voc match instead of fixed check order [\#54](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/54) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.12a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a3) (2026-08-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a2...0.1.12a3)
+
+**Merged pull requests:**
+
+- test: locale-template validation + per-locale e2e fallback coverage [\#52](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/52) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.12a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a2) (2026-08-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.12a1...0.1.12a2)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#50](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/50) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.12a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.12a1) (2026-07-17)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.11a1...0.1.12a1)
+
+**Merged pull requests:**
+
+- fix: rename entry-point group to opm.skill [\#48](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/48) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.11a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.11a1) (2026-06-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.10a2...0.1.11a1)
+
+**Fixed bugs:**
+
+- Fix packaged locale resources [\#44](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/44) ([goldyfruit](https://github.com/goldyfruit))
+
+**Merged pull requests:**
+
+- fix\(ci\): point release workflows at ovos\_skill\_fallback\_unknown/version.py [\#46](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/46) ([JarbasAl](https://github.com/JarbasAl))
+- fix: allow ovos-workshop 9.x [\#45](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/45) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.10a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.10a2) (2026-04-09)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.10a1...0.1.10a2)
+
+**Merged pull requests:**
+
+- chore\(ovos-skill-fallback-unknown\): allow ovos-workshop\<9.0.0 [\#42](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/42) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.1.10a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.10a1) (2026-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.9...0.1.10a1)
+
+**Merged pull requests:**
+
+- ci: modernize GitHub workflows [\#40](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/40) ([JarbasAl](https://github.com/JarbasAl))
+- fix\(i18n\): normalize locale folders to canonical BCP-47 [\#39](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/39) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
