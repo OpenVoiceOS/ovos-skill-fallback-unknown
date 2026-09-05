@@ -56,7 +56,13 @@ class TestUnknownFallback(TestCase):
             # resolved to and brackets the handler with the ovos.intent.* lifecycle
             Message("ovos.intent.matched",
                     {"intent_name": f"ovos.skills.fallback.{self.skill_id}.request",
-                     "pipeline_id": "ovos-fallback-pipeline-plugin-low",
+                     # OVOS-PIPELINE-1 §7.3 / ovos_core.intent_services.service
+                     # strips the confidence-tier suffix ("-high"/"-medium"/
+                     # "-low") before stamping the dispatch's pipeline_id: §3.1
+                     # requires attribution to name the plugin's single bare
+                     # id, never the entry-specific tiered matcher id that
+                     # session.pipeline used to select it.
+                     "pipeline_id": "ovos-fallback-pipeline-plugin",
                      "utterance": "blleerghh foo bar"}),
             Message("ovos.intent.handler.start",
                     {"intent_name": f"ovos.skills.fallback.{self.skill_id}.request"}),
