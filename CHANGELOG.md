@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.14a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.14a2) (2026-09-05)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.14a1...0.1.14a2)
+
+**Merged pull requests:**
+
+- refactor: use ovos\_workshop voc\_match\_span for category matching [\#58](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/58) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.14a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.14a1) (2026-09-05)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.13a2...0.1.14a1)
