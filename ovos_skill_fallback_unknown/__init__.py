@@ -11,10 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-import re
-
 from ovos_bus_client.message import Message
-from ovos_utils.text_utils import remove_accents_and_punct
 from ovos_workshop.skills.fallback import FallbackSkill
 from ovos_utils import classproperty
 from ovos_utils.process_utils import RuntimeRequirements
@@ -43,27 +40,17 @@ class UnknownSkill(FallbackSkill):
          
     def _longest_voc_match(self, utterance, voc_filename):
         """
-        Return the length of the longest vocab sample (normalized, accents
-        and punctuation stripped) from ``voc_filename`` that matches
-        ``utterance`` as a whole word/phrase, or -1 if none match.
+        Return the length of the longest vocab entry from ``voc_filename``
+        that matches ``utterance``, or -1 if none match.
 
         voc_match() only tells us whether *any* sample matched, not which
-        one nor how long it was, so this replicates its exact matching
-        semantics (default exact=False -> whole-word substring containment,
-        see ovos_workshop.skills.ovos.OVOSSkill.voc_match) to let the caller
-        compare match specificity across multiple vocab classes.
+        one nor how long it was, so this uses voc_match_span() to let the
+        caller compare match specificity across multiple vocab classes.
         """
-        try:
-            vocs = self.voc_list(voc_filename, self.lang)
-        except FileNotFoundError:
+        hits = self.voc_match_span(utterance, voc_filename)
+        if not hits:
             return -1
-        norm_utt = remove_accents_and_punct(utterance)
-        best = -1
-        for v in vocs:
-            norm_v = remove_accents_and_punct(v)
-            if re.match(r'.*\b' + re.escape(norm_v) + r'\b.*', norm_utt, re.IGNORECASE):
-                best = max(best, len(norm_v))
-        return best
+        return max(end - start for _, start, end in hits)
 
     @fallback_handler(priority=100)
     def handle_fallback(self, message):
