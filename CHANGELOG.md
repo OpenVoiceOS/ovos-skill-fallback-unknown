@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.14a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.14a1) (2026-09-05)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.13a2...0.1.14a1)
+
+**Merged pull requests:**
+
+- fix: close it-IT/eu-ES vocab gaps failing golden multilang e2e tests [\#59](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/59) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.13a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.13a2) (2026-08-26)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.13a1...0.1.13a2)
