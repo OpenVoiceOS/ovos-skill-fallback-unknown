@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.0a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.2.0a1) (2026-09-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.14a2...0.2.0a1)
+
+**Merged pull requests:**
+
+- feat: kab locale parity [\#63](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/63) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.1.14a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.1.14a2) (2026-09-05)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.1.14a1...0.1.14a2)
