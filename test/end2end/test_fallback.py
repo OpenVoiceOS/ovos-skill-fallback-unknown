@@ -52,6 +52,9 @@ class TestUnknownFallback(TestCase):
             Message("ovos.skills.fallback.pong",
                     {"skill_id": self.skill_id, "can_handle": True},
                     {"skill_id": self.skill_id}),
+            # the skill is not yet active in this fresh session; converse's
+            # activate() fires once, before the fallback handler runs
+            Message(f"{self.skill_id}.activate", {}, {"skill_id": self.skill_id}),
             # INTENT §8.1: the dispatcher reports the fallback "intent" it
             # resolved to and brackets the handler with the ovos.intent.* lifecycle
             Message("ovos.intent.matched",
