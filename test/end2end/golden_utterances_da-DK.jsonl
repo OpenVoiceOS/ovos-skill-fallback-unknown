@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvad gør", "lang": "da-DK", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvornår vil", "lang": "da-DK", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvornår er", "lang": "da-DK", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvem vil", "lang": "da-DK", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "Hvem er", "lang": "da-DK", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvem gjorde", "lang": "da-DK", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvorfor gøre", "lang": "da-DK", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvorfor er", "lang": "da-DK", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hvorfor vil", "lang": "da-DK", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}

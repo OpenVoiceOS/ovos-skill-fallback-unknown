@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "co je", "lang": "cs-CZ", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "kde bude", "lang": "cs-CZ", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "kdy je", "lang": "cs-CZ", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "kdo byl", "lang": "cs-CZ", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "kdo bude", "lang": "cs-CZ", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "kdo je", "lang": "cs-CZ", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "proč je", "lang": "cs-CZ", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "proč byl", "lang": "cs-CZ", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "proč bude", "lang": "cs-CZ", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}

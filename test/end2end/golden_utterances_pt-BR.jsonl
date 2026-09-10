@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "onde vai", "lang": "pt-BR", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "o que", "lang": "pt-BR", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "onde fez", "lang": "pt-BR", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quem vai", "lang": "pt-BR", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "Quem faz", "lang": "pt-BR", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quem é", "lang": "pt-BR", "expected_dialog": "who.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que", "lang": "pt-BR", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "porque vai", "lang": "pt-BR", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "porque é", "lang": "pt-BR", "expected_dialog": "why.is", "needs_manual": false, "machine_generated": false}
