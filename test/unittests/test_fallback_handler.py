@@ -21,15 +21,15 @@ class TestFallbackHandler(unittest.TestCase):
         # adversarial: "why is" (6 chars) is a longer match than any
         # "question" vocab entry on this utterance, so _longest_voc_match
         # must recover it from voc_match_span rather than just knowing
-        # *whether* why.is matched at all.
-        hits = self.skill.voc_match_span("why is the sky blue", "why.is")
+        # *whether* why_is matched at all.
+        hits = self.skill.voc_match_span("why is the sky blue", "why_is")
         self.assertEqual(hits, [("why is", 0, 6)])
         self.assertEqual(
-            self.skill._longest_voc_match("why is the sky blue", "why.is"), 6
+            self.skill._longest_voc_match("why is the sky blue", "why_is"), 6
         )
         # no match at all -> -1, not 0 or an empty-list truthiness bug
         self.assertEqual(
-            self.skill._longest_voc_match("blleerghh foo bar", "why.is"), -1
+            self.skill._longest_voc_match("blleerghh foo bar", "why_is"), -1
         )
 
     def test_longest_voc_match_delegates_to_voc_match_span(self):
@@ -44,16 +44,16 @@ class TestFallbackHandler(unittest.TestCase):
 
         self.skill.voc_match_span = fake_span
         try:
-            result = self.skill._longest_voc_match("why is the sky blue", "why.is")
+            result = self.skill._longest_voc_match("why is the sky blue", "why_is")
         finally:
             del self.skill.voc_match_span
-        self.assertEqual(calls, [("why is the sky blue", "why.is")])
+        self.assertEqual(calls, [("why is the sky blue", "why_is")])
         self.assertEqual(result, 6)
 
     def test_handle_fallback_picks_longest_matching_category(self):
         cases = {
-            "who is the president": "who.is",
-            "why is the sky blue": "why.is",
+            "who is the president": "who_is",
+            "why is the sky blue": "why_is",
             "what is the time": "question",
             "blleerghh foo bar": "unknown",
         }

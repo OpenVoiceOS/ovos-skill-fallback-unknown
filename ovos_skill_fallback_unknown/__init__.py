@@ -59,7 +59,7 @@ class UnknownSkill(FallbackSkill):
         # so a narrower phrase (eg. gl-ES "que") doesn't shadow a longer,
         # more specific phrase that contains it (eg. "por que será"). Ties
         # are broken by the original fixed check order.
-        order = ['question', 'who.is', 'why.is']
+        order = ['question', 'who_is', 'why_is']
         best_type = None
         best_len = -1
         for i in order:
