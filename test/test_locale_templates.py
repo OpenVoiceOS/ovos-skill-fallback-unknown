@@ -4,8 +4,8 @@ Same technique as ovos-skill-alerts/ovos-skill-volume's sibling test:
 every .voc/.dialog/.intent/.entity/.rx line under
 ovos_skill_fallback_unknown/locale/ must expand cleanly per OVOS-INTENT-1
 via ovos_spec_tools.expand(). This skill's locale/ layout is flat (no
-vocab/ or dialog/ subdirectories -- e.g. locale/ca-ES/who.is.voc sits next
-to locale/ca-ES/who.is.dialog), unlike alerts/volume, but the same walk +
+vocab/ or dialog/ subdirectories -- e.g. locale/ca-ES/who_is.voc sits next
+to locale/ca-ES/who_is.dialog), unlike alerts/volume, but the same walk +
 expand() check applies unchanged.
 """
 import os
