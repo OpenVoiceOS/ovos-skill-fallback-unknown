@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.1a1) (2026-09-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.0a1...0.3.1a1)
+
+**Merged pull requests:**
+
+- fix: resource names per OVOS-INTENT-2 §2 [\#70](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/70) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.0a1) (2026-09-10)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.2.0a1...0.3.0a1)
