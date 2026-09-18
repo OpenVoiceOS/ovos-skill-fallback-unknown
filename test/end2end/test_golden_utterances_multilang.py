@@ -3,11 +3,11 @@ ovos-skill-fallback-unknown.
 
 test_fallback.py only exercises the en-US catch-all ("unknown") branch;
 every other locale under locale/ (a flat layout: question.voc/.dialog,
-who.is.voc/.dialog, why.is.voc/.dialog, unknown.dialog directly under
+who_is.voc/.dialog, why_is.voc/.dialog, unknown.dialog directly under
 locale/<lang>/, no vocab/ or dialog/ subdirectories) was never routed
 end-to-end. The skill's fallback handler (see
 ovos_skill_fallback_unknown/__init__.py::handle_fallback) checks
-voc_match against question/who.is/why.is in that order and falls
+voc_match against question/who_is/why_is in that order and falls
 through to the "unknown" dialog if none match; there is no separate
 intent to assert against (the fallback pipeline always claims the
 utterance -- can_answer always returns True), so what this suite
@@ -17,9 +17,9 @@ verifies is WHICH of the four dialogs the skill picked, via the
 randomized dialog *text* is never asserted, matching test_fallback.py's
 precedent.
 
-Row construction: every question/who.is/why.is row is a natural-language
-sample expanded directly from the locale's own question.voc / who.is.voc
-/ why.is.voc via ovos_spec_tools.expand() -- no drafted or translated
+Row construction: every question/who_is/why_is row is a natural-language
+sample expanded directly from the locale's own question.voc / who_is.voc
+/ why_is.voc via ovos_spec_tools.expand() -- no drafted or translated
 content. The "unknown" (catch-all) branch is exercised with the same
 language-neutral gibberish string test_fallback.py already uses
 ("blleerghh foo bar") -- it is not locale content, it is deliberately
@@ -58,8 +58,8 @@ LANGS = [
 ]
 
 # Language-neutral gibberish, identical to test_fallback.py's en-US row --
-# proves the "unknown" fallthrough branch fires when no question/who.is/
-# why.is vocab matches, in every covered locale.
+# proves the "unknown" fallthrough branch fires when no question/who_is/
+# why_is vocab matches, in every covered locale.
 UNKNOWN_UTTERANCE = "blleerghh foo bar"
 
 
@@ -137,10 +137,10 @@ def _golden_id(row):
 
 # Regression pin for real routing defects previously reproduced by this
 # pass (gl-ES/ro-RO "que"/"ce este"/"ce va"/"ce a făcut" question.voc
-# entries being literal substrings of the corresponding why.is.voc
+# entries being literal substrings of the corresponding why_is.voc
 # phrases). handle_fallback() now evaluates all three vocab classes and
 # picks the *longest* matched phrase instead of the first one checked in
-# fixed ['question', 'who.is', 'why.is'] order, so those rows pass outright
+# fixed ['question', 'who_is', 'why_is'] order, so those rows pass outright
 # and no longer need an entry here. Kept as an empty, ready-to-use
 # mechanism for any future locale/order regression.
 KNOWN_BUGS = {}
