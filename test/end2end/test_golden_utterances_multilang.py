@@ -26,11 +26,13 @@ language-neutral gibberish string test_fallback.py already uses
 unmatchable noise proving the fallthrough path, identical technique to
 the existing en-US test.
 
-One shared MiniCroft is booted with en-US as the primary language and
-every covered locale as a secondary_lang (ovoscope>=1.6.5a1 /
-padacioso>=2.2.3a1, cross-language detach fix) -- though this skill's
-own routing does not depend on padacioso/padatious/adapt at all (it is a
-pure fallback-pipeline + voc_match skill), so this mainly exercises
+One MiniCroft is booted per locale (``get_minicroft([SKILL_ID],
+max_wait=150, lang=LANG)``) and torn down before moving to the next
+locale, avoiding the open ovoscope harness bug in the shared
+secondary_langs boot path that keeps ovos-skill-alerts' own multilang
+suite skipped upstream -- though this skill's own routing does not
+depend on padacioso/padatious/adapt at all (it is a pure
+fallback-pipeline + voc_match skill), so this mainly exercises
 MiniCroft's per-locale resource loading, not intent-pipeline routing.
 """
 import json
@@ -52,9 +54,9 @@ _IGNORE = [
 END2END_DIR = Path(__file__).parent
 
 LANGS = [
-    "ca-ES", "cs-CZ", "da-DK", "de-DE", "es-ES", "eu-ES", "fa-IR",
-    "fr-FR", "gl-ES", "hu-HU", "it-IT", "nl-NL", "pl-PL", "pt-BR",
-    "pt-PT", "ro-RO", "ru-RU", "sv-SE",
+    "en-US", "ca-ES", "cs-CZ", "da-DK", "de-DE", "es-ES", "eu-ES", "fa-IR",
+    "fr-FR", "gl-ES", "hu-HU", "it-IT", "kab", "nl-NL", "oc-FR", "pl-PL",
+    "pt-BR", "pt-PT", "ro-RO", "ru-RU", "sv-SE",
 ]
 
 # Language-neutral gibberish, identical to test_fallback.py's en-US row --
@@ -101,10 +103,20 @@ GOLDEN_ROWS = [_as_param(r) for r in ALL_ROWS]
 
 
 @pytest.fixture(scope="module")
-def minicroft():
-    mc = get_minicroft([SKILL_ID], secondary_langs=LANGS)
-    yield mc
-    mc.stop()
+def minicroft_factory():
+    cache = {"lang": None, "mc": None}
+
+    def _get(lang):
+        if cache["lang"] != lang:
+            if cache["mc"] is not None:
+                cache["mc"].stop()
+            cache["mc"] = get_minicroft([SKILL_ID], max_wait=150, lang=lang)
+            cache["lang"] = lang
+        return cache["mc"]
+
+    yield _get
+    if cache["mc"] is not None:
+        cache["mc"].stop()
 
 
 def _speak_dialog(mc, text, lang, session_id):
@@ -148,8 +160,9 @@ KNOWN_BUGS = {}
 
 @pytest.mark.timeout(300)
 @pytest.mark.parametrize("row", GOLDEN_ROWS, ids=_golden_id)
-def test_fallback_dialog_multilang(minicroft, row):
-    dialog = _speak_dialog(minicroft, row["utterance"], row["lang"], f"golden-{_golden_id(row)}")
+def test_fallback_dialog_multilang(minicroft_factory, row):
+    mc = minicroft_factory(row["lang"])
+    dialog = _speak_dialog(mc, row["utterance"], row["lang"], f"golden-{_golden_id(row)}")
     matched = dialog == row["expected_dialog"]
     bug_key = (row["lang"], row["utterance"])
     if bug_key in KNOWN_BUGS and not matched:

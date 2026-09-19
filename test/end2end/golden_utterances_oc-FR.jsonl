@@ -1,0 +1,8 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ont", "lang": "oc-FR", "expected_dialog": "question", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quand serà", "lang": "oc-FR", "expected_dialog": "question", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué son", "lang": "oc-FR", "expected_dialog": "question", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qual", "lang": "oc-FR", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qual a fach", "lang": "oc-FR", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qual o farà", "lang": "oc-FR", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "perqué", "lang": "oc-FR", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "per qué", "lang": "oc-FR", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": true}
