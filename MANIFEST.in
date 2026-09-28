@@ -1,2 +1,3 @@
-recursive-include locale *
+recursive-include ovos_skill_fallback_unknown/locale *
 include *.txt
+include test/requirements.txt

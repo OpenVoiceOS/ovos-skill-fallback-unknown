@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "what did", "lang": "en-US", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "when does", "lang": "en-US", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "where will", "lang": "en-US", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who did", "lang": "en-US", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who does", "lang": "en-US", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who will", "lang": "en-US", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why did", "lang": "en-US", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why does", "lang": "en-US", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why will", "lang": "en-US", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}

@@ -1,0 +1,7 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "d acu i", "lang": "kab", "expected_dialog": "question", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "melmi ara", "lang": "kab", "expected_dialog": "question", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "anda ara", "lang": "kab", "expected_dialog": "question", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "anwa i", "lang": "kab", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "anwa ara", "lang": "kab", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "acuɣer i", "lang": "kab", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "acuɣer ara", "lang": "kab", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": true}
