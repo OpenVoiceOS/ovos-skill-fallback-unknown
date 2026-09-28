@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.1a3) (2026-09-28)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.1a2...0.3.1a3)
+
+**Merged pull requests:**
+
+- locale: draft es-CO from es-ES [\#73](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/73) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.3.1a2](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.1a2) (2026-09-19)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.1a1...0.3.1a2)
