@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1a4](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.1a4) (2026-10-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.1a3...0.3.1a4)
+
+**Merged pull requests:**
+
+- test: natural golden questions and negatives for the fallback dialogs [\#75](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/75) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.3.1a3](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.1a3) (2026-09-28)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.1a2...0.3.1a3)
