@@ -11,6 +11,8 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+import re
+
 from ovos_bus_client.message import Message
 from ovos_workshop.skills.fallback import FallbackSkill
 from ovos_utils import classproperty
@@ -38,7 +40,7 @@ class UnknownSkill(FallbackSkill):
     def can_answer(self, message: Message) -> bool:
         return True
          
-    def _longest_voc_match(self, utterance, voc_filename):
+    def _longest_voc_match(self, utterance, voc_filename, at_start=False):
         """
         Return the length of the longest vocab entry from ``voc_filename``
         that matches ``utterance``, or -1 if none match.
@@ -46,8 +48,11 @@ class UnknownSkill(FallbackSkill):
         voc_match() only tells us whether *any* sample matched, not which
         one nor how long it was, so this uses voc_match_span() to let the
         caller compare match specificity across multiple vocab classes.
+        With ``at_start``, only a match with no word before it counts.
         """
         hits = self.voc_match_span(utterance, voc_filename)
+        if at_start:
+            hits = [h for h in hits if not re.search(r"\w", utterance[:h[1]])]
         if not hits:
             return -1
         return max(end - start for _, start, end in hits)
@@ -56,14 +61,21 @@ class UnknownSkill(FallbackSkill):
     def handle_fallback(self, message):
         utterance = message.data['utterance'].lower()
         # Evaluate all vocab classes and let the longest matched phrase win,
-        # so a narrower phrase (eg. gl-ES "que") doesn't shadow a longer,
-        # more specific phrase that contains it (eg. "por que será"). Ties
+        # so a narrower phrase (eg. gl-ES "que é") doesn't shadow a longer,
+        # more specific phrase that contains it (eg. "por que é"). Ties
         # are broken by the original fixed check order.
-        order = ['question', 'who_is', 'why_is']
+        # question_start.voc holds question words that, once accents are
+        # folded, also spell a conjunction or relative pronoun (eg. gl-ES
+        # "que"). They ask a question only when they open the utterance.
+        lengths = {
+            'question': max(self._longest_voc_match(utterance, 'question'),
+                            self._longest_voc_match(utterance, 'question_start', at_start=True)),
+            'who_is': self._longest_voc_match(utterance, 'who_is'),
+            'why_is': self._longest_voc_match(utterance, 'why_is'),
+        }
         best_type = None
         best_len = -1
-        for i in order:
-            match_len = self._longest_voc_match(utterance, i)
+        for i, match_len in lengths.items():
             if match_len > best_len:
                 best_len = match_len
                 best_type = i
