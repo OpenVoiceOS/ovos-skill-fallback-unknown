@@ -1,9 +1,9 @@
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cando fan", "lang": "gl-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cando é", "lang": "gl-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cando será", "lang": "gl-ES", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quen é", "lang": "gl-ES", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quen fixo", "lang": "gl-ES", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quen fan", "lang": "gl-ES", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que é", "lang": "gl-ES", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que fan", "lang": "gl-ES", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que será", "lang": "gl-ES", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cando fan a festa do Apóstolo en Santiago", "lang": "gl-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "cando fan"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cando é o próximo partido do Celta", "lang": "gl-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "cando é"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cando será a próxima lúa chea", "lang": "gl-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "cando será"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quen é o presidente da Xunta", "lang": "gl-ES", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "quen é"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quen fixo o Pórtico da Gloria", "lang": "gl-ES", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "quen fixo"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quen fai as mellores filloas da vila", "lang": "gl-ES", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "quen fan"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que é azul o ceo", "lang": "gl-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por que é"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que fan tanto ruído as gaivotas", "lang": "gl-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por que fan"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que será que chove tanto en Galicia", "lang": "gl-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por que será"}

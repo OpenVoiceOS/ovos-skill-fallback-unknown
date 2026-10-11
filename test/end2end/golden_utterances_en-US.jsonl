@@ -1,9 +1,9 @@
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "what did", "lang": "en-US", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "when does", "lang": "en-US", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "where will", "lang": "en-US", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who did", "lang": "en-US", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who does", "lang": "en-US", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who will", "lang": "en-US", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why did", "lang": "en-US", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why does", "lang": "en-US", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why will", "lang": "en-US", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "what did the dinosaurs eat", "lang": "en-US", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "what did"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "when does the next train to boston leave", "lang": "en-US", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "when does"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "where will the next olympic games be held", "lang": "en-US", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "where will"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who did taylor swift write that song about", "lang": "en-US", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "who did"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who does the voice of mickey mouse", "lang": "en-US", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "who does"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "who will win the world cup this year", "lang": "en-US", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "who will"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why did the titanic sink", "lang": "en-US", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "why did"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why does the moon change shape", "lang": "en-US", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "why does"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "why will the sun burn out one day", "lang": "en-US", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "why will"}
