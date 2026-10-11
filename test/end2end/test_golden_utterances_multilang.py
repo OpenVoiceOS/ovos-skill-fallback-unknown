@@ -1,39 +1,23 @@
-"""Multilingual golden-utterance end-to-end coverage for
-ovos-skill-fallback-unknown.
+"""Golden utterances in every locale pick the right fallback dialog.
 
-test_fallback.py only exercises the en-US catch-all ("unknown") branch;
-every other locale under locale/ (a flat layout: question.voc/.dialog,
-who_is.voc/.dialog, why_is.voc/.dialog, unknown.dialog directly under
-locale/<lang>/, no vocab/ or dialog/ subdirectories) was never routed
-end-to-end. The skill's fallback handler (see
-ovos_skill_fallback_unknown/__init__.py::handle_fallback) checks
-voc_match against question/who_is/why_is in that order and falls
-through to the "unknown" dialog if none match; there is no separate
-intent to assert against (the fallback pipeline always claims the
-utterance -- can_answer always returns True), so what this suite
-verifies is WHICH of the four dialogs the skill picked, via the
-``meta.dialog`` field ovos-workshop attaches to the
-``ovos.utterance.speak`` message when a dialog is rendered. The
-randomized dialog *text* is never asserted, matching test_fallback.py's
-precedent.
+This skill is a fallback skill. It registers no ``.intent`` files, so the m2v
+pipeline builds no prototypes for it, and no intent engine routes to it. Its
+fallback handler (``ovos_skill_fallback_unknown.UnknownSkill.handle_fallback``)
+matches the utterance against ``question.voc``, ``who_is.voc`` and
+``why_is.voc``, lets the longest matched phrase win, and speaks the dialog of
+that name. With no match it speaks ``unknown``. The ``intent_label`` of a
+golden row is the name of the dialog the skill must pick, read from the
+``meta.dialog`` field of the ``ovos.utterance.speak`` message. The dialog text
+is random and is never asserted.
 
-Row construction: every question/who_is/why_is row is a natural-language
-sample expanded directly from the locale's own question.voc / who_is.voc
-/ why_is.voc via ovos_spec_tools.expand() -- no drafted or translated
-content. The "unknown" (catch-all) branch is exercised with the same
-language-neutral gibberish string test_fallback.py already uses
-("blleerghh foo bar") -- it is not locale content, it is deliberately
-unmatchable noise proving the fallthrough path, identical technique to
-the existing en-US test.
+Golden rows (``golden_utterances_<lang>.jsonl``) are natural questions. Every
+row runs, including rows marked ``needs_manual`` or ``machine_generated``.
+Negative rows (``negative_utterances_<lang>.jsonl``) are requests for other
+skills. The skill must answer each of them with the ``unknown`` dialog, never
+as a question. A language-neutral string of noise proves the ``unknown`` branch
+in every locale.
 
-One MiniCroft is booted per locale (``get_minicroft([SKILL_ID],
-max_wait=150, lang=LANG)``) and torn down before moving to the next
-locale, avoiding the open ovoscope harness bug in the shared
-secondary_langs boot path that keeps ovos-skill-alerts' own multilang
-suite skipped upstream -- though this skill's own routing does not
-depend on padacioso/padatious/adapt at all (it is a pure
-fallback-pipeline + voc_match skill), so this mainly exercises
-MiniCroft's per-locale resource loading, not intent-pipeline routing.
+One MiniCroft is booted per locale and stopped before the next one boots.
 """
 import json
 from pathlib import Path
@@ -44,62 +28,53 @@ from ovos_bus_client.session import Session
 from ovoscope import CaptureSession, get_minicroft
 
 SKILL_ID = "ovos-skill-fallback-unknown.openvoiceos"
-
-_IGNORE = [
-    "speak",
-    "recognizer_loop:audio_output_start",
-    "recognizer_loop:audio_output_end",
-]
-
 END2END_DIR = Path(__file__).parent
-
-LANGS = [
-    "en-US", "ca-ES", "cs-CZ", "da-DK", "de-DE", "es-ES", "eu-ES", "fa-IR",
-    "fr-FR", "gl-ES", "hu-HU", "it-IT", "kab", "nl-NL", "oc-FR", "pl-PL",
-    "pt-BR", "pt-PT", "ro-RO", "ru-RU", "sv-SE",
-]
-
-# Language-neutral gibberish, identical to test_fallback.py's en-US row --
-# proves the "unknown" fallthrough branch fires when no question/who_is/
-# why_is vocab matches, in every covered locale.
+LOCALE_DIR = END2END_DIR.parents[1] / "ovos_skill_fallback_unknown" / "locale"
+UNKNOWN = "unknown"
 UNKNOWN_UTTERANCE = "blleerghh foo bar"
 
+# (lang, utterance) -> reason, for a measured defect that a fix has not
+# reached yet. A row listed here that misses is an xfail; one that passes is
+# a normal pass.
+#
+# voc_match folds accents and matches whole words, so a bare question word in
+# question.voc also matches the same word used as a conjunction or relative
+# pronoun inside a command. A command for another skill then gets the
+# question dialog instead of unknown.
+_BARE_QUE = "gl-ES question.voc holds the bare word 'que', which also matches the conjunction 'que'"
+_BARE_ZER = "eu-ES question.voc holds the bare word 'zer', which also matches 'zer' in an indirect question"
+KNOWN_BUGS = {
+    ("gl-ES", "fai que a música soe máis baixo"): _BARE_QUE,
+    ("gl-ES", "lémbrame que teño que mercar pan mañá"): _BARE_QUE,
+    ("gl-ES", "pon a radio que escoita a miña nai"): _BARE_QUE,
+    ("eu-ES", "erakutsi zer dagoen gaurko egutegian"): _BARE_ZER,
+}
 
-def _load_rows(lang):
-    path = END2END_DIR / f"golden_utterances_{lang}.jsonl"
+
+def _load(prefix):
     rows = []
-    with open(path, encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
-            if not line:
-                continue
-            row = json.loads(line)
-            if row.get("needs_manual"):
-                continue
-            rows.append(row)
+    for path in sorted(END2END_DIR.glob(f"{prefix}_*.jsonl")):
+        lang = path.stem.removeprefix(f"{prefix}_")
+        for number, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+            if line.strip():
+                row = json.loads(line)
+                assert row["lang"] == lang, f"{path.name}:{number} has lang {row['lang']!r}"
+                rows.append(row)
     return rows
 
 
-ALL_ROWS = []
-for _lang in LANGS:
-    for _row in _load_rows(_lang):
-        ALL_ROWS.append(_row)
-    ALL_ROWS.append({
-        "skill_id": SKILL_ID,
-        "utterance": UNKNOWN_UTTERANCE,
-        "lang": _lang,
-        "expected_dialog": "unknown",
-        "needs_manual": False,
-        "machine_generated": False,
-    })
+GOLDEN = _load("golden_utterances")
+NEGATIVE = _load("negative_utterances")
+LANGS = sorted({row["lang"] for row in GOLDEN})
 
-
-def _as_param(row):
-    tag = "tier2" if row.get("machine_generated") else "tier1"
-    return pytest.param(row, id=f"{row['lang']}-{tag}-{row['expected_dialog']}-{row['utterance']}")
-
-
-GOLDEN_ROWS = [_as_param(r) for r in ALL_ROWS]
+CASES = (
+    [pytest.param(r["lang"], r["utterance"], r["intent_label"],
+                  id=f"{r['lang']}-{r['intent_label']}-{r['utterance']}") for r in GOLDEN]
+    + [pytest.param(r["lang"], r["utterance"], UNKNOWN,
+                    id=f"{r['lang']}-negative-{r['utterance']}") for r in NEGATIVE]
+    + [pytest.param(lang, UNKNOWN_UTTERANCE, UNKNOWN,
+                    id=f"{lang}-noise-{UNKNOWN_UTTERANCE}") for lang in LANGS]
+)
 
 
 @pytest.fixture(scope="module")
@@ -119,8 +94,8 @@ def minicroft_factory():
         cache["mc"].stop()
 
 
-def _speak_dialog(mc, text, lang, session_id):
-    session = Session(session_id)
+def _spoken_dialog(mc, text, lang):
+    session = Session(f"golden-{lang}-{text}")
     session.lang = lang
     session.pipeline = ["ovos-fallback-pipeline-plugin-low"]
     utterance = Message(
@@ -128,14 +103,9 @@ def _speak_dialog(mc, text, lang, session_id):
         {"utterances": [text], "lang": lang},
         {"session": session.serialize(), "source": "A", "destination": "B"},
     )
-    capture = CaptureSession(
-        mc,
-        eof_msgs=["ovos.utterance.handled"],
-        ignore_messages=[],
-    )
+    capture = CaptureSession(mc, eof_msgs=["ovos.utterance.handled"], ignore_messages=[])
     capture.capture(utterance, timeout=30)
-    messages = capture.finish()
-    for m in messages:
+    for m in capture.finish():
         if m.msg_type in ("speak", "ovos.utterance.speak"):
             meta = (m.data or {}).get("meta") or {}
             if meta.get("skill") == SKILL_ID:
@@ -143,33 +113,18 @@ def _speak_dialog(mc, text, lang, session_id):
     return None
 
 
-def _golden_id(row):
-    return f"{row['lang']}-{row['expected_dialog']}-{row['utterance']}"
-
-
-# Regression pin for real routing defects previously reproduced by this
-# pass (gl-ES/ro-RO "que"/"ce este"/"ce va"/"ce a făcut" question.voc
-# entries being literal substrings of the corresponding why_is.voc
-# phrases). handle_fallback() now evaluates all three vocab classes and
-# picks the *longest* matched phrase instead of the first one checked in
-# fixed ['question', 'who_is', 'why_is'] order, so those rows pass outright
-# and no longer need an entry here. Kept as an empty, ready-to-use
-# mechanism for any future locale/order regression.
-KNOWN_BUGS = {}
+def test_every_locale_has_a_golden_file():
+    shipped = {p.name for p in LOCALE_DIR.iterdir() if p.is_dir()}
+    assert shipped == set(LANGS), (
+        f"locales without golden rows: {sorted(shipped - set(LANGS))}; "
+        f"golden rows without a locale: {sorted(set(LANGS) - shipped)}"
+    )
 
 
 @pytest.mark.timeout(300)
-@pytest.mark.parametrize("row", GOLDEN_ROWS, ids=_golden_id)
-def test_fallback_dialog_multilang(minicroft_factory, row):
-    mc = minicroft_factory(row["lang"])
-    dialog = _speak_dialog(mc, row["utterance"], row["lang"], f"golden-{_golden_id(row)}")
-    matched = dialog == row["expected_dialog"]
-    bug_key = (row["lang"], row["utterance"])
-    if bug_key in KNOWN_BUGS and not matched:
-        pytest.xfail(reason=f"known-bug: {KNOWN_BUGS[bug_key]}")
-    if row.get("machine_generated") and not matched:
-        pytest.xfail(reason="coverage-gap (machine-drafted, pending native validation)")
-    assert matched, (
-        f"[{row['lang']}] {row['utterance']!r}: expected dialog "
-        f"{row['expected_dialog']!r}, got {dialog!r}"
-    )
+@pytest.mark.parametrize("lang,utterance,expected", CASES)
+def test_fallback_dialog_multilang(minicroft_factory, lang, utterance, expected):
+    dialog = _spoken_dialog(minicroft_factory(lang), utterance, lang)
+    if dialog != expected and (lang, utterance) in KNOWN_BUGS:
+        pytest.xfail(reason=f"known bug: {KNOWN_BUGS[(lang, utterance)]}")
+    assert dialog == expected, f"[{lang}] {utterance!r}: expected dialog {expected!r}, got {dialog!r}"

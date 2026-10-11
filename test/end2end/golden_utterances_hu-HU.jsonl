@@ -1,9 +1,9 @@
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hol a", "lang": "hu-HU", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hol tesz", "lang": "hu-HU", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hol csinál", "lang": "hu-HU", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ki tette", "lang": "hu-HU", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ki fog", "lang": "hu-HU", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ki csinál", "lang": "hu-HU", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "miért tette", "lang": "hu-HU", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "miért tesznek", "lang": "hu-HU", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "miért csinált", "lang": "hu-HU", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hol a legközelebbi gyógyszertár", "lang": "hu-HU", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "hol a"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hol tesz le a busz a városközpontban", "lang": "hu-HU", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "hol tesz"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "hol csinálnak jó pizzát a közelben", "lang": "hu-HU", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "hol csinál"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ki tette ide a kulcsomat", "lang": "hu-HU", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "ki tette"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ki fog nyerni a választáson", "lang": "hu-HU", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "ki fog"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ki csinál ma vacsorát", "lang": "hu-HU", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "ki csinál"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "miért tette ezt a szomszéd", "lang": "hu-HU", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "miért tette"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "miért tesznek sót az utakra télen", "lang": "hu-HU", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "miért tesznek"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "miért csinált a kutya ekkora rendetlenséget", "lang": "hu-HU", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "miért csinált"}

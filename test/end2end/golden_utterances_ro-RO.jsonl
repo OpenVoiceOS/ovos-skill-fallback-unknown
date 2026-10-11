@@ -1,9 +1,10 @@
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "unde vor", "lang": "ro-RO", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ce face", "lang": "ro-RO", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cand va", "lang": "ro-RO", "expected_dialog": "question", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cine va", "lang": "ro-RO", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cine este", "lang": "ro-RO", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "care fac", "lang": "ro-RO", "expected_dialog": "who_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce a făcut", "lang": "ro-RO", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce este", "lang": "ro-RO", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
-{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce va", "lang": "ro-RO", "expected_dialog": "why_is", "needs_manual": false, "machine_generated": false}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "unde vor avea loc următoarele Jocuri Olimpice", "lang": "ro-RO", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "unde vor"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ce face un notar", "lang": "ro-RO", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "ce face"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "când va începe vara", "lang": "ro-RO", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "cand va"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cine va câștiga alegerile", "lang": "ro-RO", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "cine va"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cine este președintele României", "lang": "ro-RO", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "cine este"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cine face cei mai buni covrigi din București", "lang": "ro-RO", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "care fac"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce a făcut Ștefan cel Mare atâtea mănăstiri", "lang": "ro-RO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "de ce a făcut"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce este cerul albastru", "lang": "ro-RO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "de ce este"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce va fi atât de cald mâine", "lang": "ro-RO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "de ce va"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "de ce fac copiii febră când le ies dinții", "lang": "ro-RO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
