@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.2a1](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.2a1) (2026-10-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.1a4...0.3.2a1)
+
+**Merged pull requests:**
+
+- fix: count a bare "que" as a question word only where a question opens [\#77](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/pull/77) ([openvoiceos-bot](https://github.com/openvoiceos-bot))
+
 ## [0.3.1a4](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/tree/0.3.1a4) (2026-10-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-skill-fallback-unknown/compare/0.3.1a3...0.3.1a4)
