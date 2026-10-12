@@ -7,3 +7,4 @@
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que é azul o ceo", "lang": "gl-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por que é"}
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que fan tanto ruído as gaivotas", "lang": "gl-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por que fan"}
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por que será que chove tanto en Galicia", "lang": "gl-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por que será"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "que opinas do Celta", "lang": "gl-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true}

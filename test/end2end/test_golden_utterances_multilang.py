@@ -33,21 +33,16 @@ LOCALE_DIR = END2END_DIR.parents[1] / "ovos_skill_fallback_unknown" / "locale"
 UNKNOWN = "unknown"
 UNKNOWN_UTTERANCE = "blleerghh foo bar"
 
-# (lang, utterance) -> reason, for a measured defect that a fix has not
-# reached yet. A row listed here that misses is an xfail; one that passes is
-# a normal pass.
+# (lang, utterance) -> (wrong dialog, reason), for a measured defect that a
+# fix has not reached yet. A row listed here is an xfail only when it gets
+# that wrong dialog. Any other miss fails, and a pass is a normal pass.
 #
-# voc_match folds accents and matches whole words, so a bare question word in
-# question.voc also matches the same word used as a conjunction or relative
-# pronoun inside a command. A command for another skill then gets the
-# question dialog instead of unknown.
-_BARE_QUE = "gl-ES question.voc holds the bare word 'que', which also matches the conjunction 'que'"
+# eu-ES question.voc holds the bare word "zer", which also matches "zer" in
+# an indirect question inside a command. A command for another skill then
+# gets the question dialog instead of unknown.
 _BARE_ZER = "eu-ES question.voc holds the bare word 'zer', which also matches 'zer' in an indirect question"
 KNOWN_BUGS = {
-    ("gl-ES", "fai que a música soe máis baixo"): _BARE_QUE,
-    ("gl-ES", "lémbrame que teño que mercar pan mañá"): _BARE_QUE,
-    ("gl-ES", "pon a radio que escoita a miña nai"): _BARE_QUE,
-    ("eu-ES", "erakutsi zer dagoen gaurko egutegian"): _BARE_ZER,
+    ("eu-ES", "erakutsi zer dagoen gaurko egutegian"): ("question", _BARE_ZER),
 }
 
 
@@ -125,6 +120,8 @@ def test_every_locale_has_a_golden_file():
 @pytest.mark.parametrize("lang,utterance,expected", CASES)
 def test_fallback_dialog_multilang(minicroft_factory, lang, utterance, expected):
     dialog = _spoken_dialog(minicroft_factory(lang), utterance, lang)
-    if dialog != expected and (lang, utterance) in KNOWN_BUGS:
-        pytest.xfail(reason=f"known bug: {KNOWN_BUGS[(lang, utterance)]}")
+    if (lang, utterance) in KNOWN_BUGS:
+        wrong_dialog, reason = KNOWN_BUGS[(lang, utterance)]
+        if dialog == wrong_dialog:
+            pytest.xfail(reason=f"known bug: {reason}")
     assert dialog == expected, f"[{lang}] {utterance!r}: expected dialog {expected!r}, got {dialog!r}"

@@ -8,3 +8,4 @@
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué se caen las hojas en otoño", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué los gatos ronronean", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué hace tanto viento en Tarifa", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué opinas de Madrid", "lang": "es-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true}

@@ -8,3 +8,4 @@
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "per què plou tant a la tardor", "lang": "ca-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "per què els gats dormen tant", "lang": "ca-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
 {"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "per què va fer vaga el metro ahir", "lang": "ca-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "què vol dir aquesta paraula", "lang": "ca-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true}
