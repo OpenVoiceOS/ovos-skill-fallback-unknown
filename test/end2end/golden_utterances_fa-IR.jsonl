@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چه وقتی ماه کامل می شود", "lang": "fa-IR", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "چه وقتی"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "اگه برق بره چی می شه", "lang": "fa-IR", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "چی می شه"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "برج میلاد کجا قرار دارد", "lang": "fa-IR", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "کجا"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چه کسی شاهنامه را نوشت", "lang": "fa-IR", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "چه کسی"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چرا آسمان آبی است", "lang": "fa-IR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "چرا"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چه کسی رئیس جمهور فرانسه است", "lang": "fa-IR", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چه کسی تلفن را اختراع کرد", "lang": "fa-IR", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چرا برگ درختان در پاییز زرد می شوند", "lang": "fa-IR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "چرا گربه ها خرخر می کنند", "lang": "fa-IR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}

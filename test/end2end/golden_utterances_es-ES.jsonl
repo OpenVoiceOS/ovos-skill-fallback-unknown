@@ -1,0 +1,11 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué es un agujero negro", "lang": "es-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "qué es|qué"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué hizo Cervantes antes de escribir el Quijote", "lang": "es-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "qué hizo|qué"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "dónde se celebrará la próxima Eurocopa", "lang": "es-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "dónde lo hará|dónde"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién es el presidente del Gobierno", "lang": "es-ES", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "quién es|quién"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién escribió Cien años de soledad", "lang": "es-ES", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "quién"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué el cielo es azul", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "por qué"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién pintó Las Meninas", "lang": "es-ES", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué se caen las hojas en otoño", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué los gatos ronronean", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué hace tanto viento en Tarifa", "lang": "es-ES", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué opinas de Madrid", "lang": "es-ES", "intent_label": "question", "needs_manual": true, "machine_generated": true}

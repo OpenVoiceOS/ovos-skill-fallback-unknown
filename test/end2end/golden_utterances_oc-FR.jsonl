@@ -1,0 +1,11 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "ont es lo Pont del Gard", "lang": "oc-FR", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "ont"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quand serà la fèsta del vilatge", "lang": "oc-FR", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "quand serà"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué son las auròras boreals", "lang": "oc-FR", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "qué son"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qual a escrich Mirèio", "lang": "oc-FR", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "qual"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qual a fach aquel pont", "lang": "oc-FR", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "qual a fach"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qual o farà se ieu soi pas aquí", "lang": "oc-FR", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "qual o farà"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "perqué lo cèl es blau", "lang": "oc-FR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "perqué"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "per qué plòu tant uèi", "lang": "oc-FR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "per qué"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "perqué los cats dormisson tant", "lang": "oc-FR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "per qué son tan longas las nuèches d'ivèrn", "lang": "oc-FR", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué pensas d'aquò", "lang": "oc-FR", "intent_label": "question", "needs_manual": true, "machine_generated": true}

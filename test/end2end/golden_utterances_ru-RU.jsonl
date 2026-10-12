@@ -1,0 +1,9 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "когда начинается чемпионат мира по футболу", "lang": "ru-RU", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "когда"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "где находится Эрмитаж", "lang": "ru-RU", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "где"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "что такое чёрная дыра", "lang": "ru-RU", "intent_label": "question", "needs_manual": true, "machine_generated": true, "rewritten_from": "что"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "кто написал Войну и мир", "lang": "ru-RU", "intent_label": "who_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "кто"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "почему небо голубое", "lang": "ru-RU", "intent_label": "why_is", "needs_manual": true, "machine_generated": true, "rewritten_from": "почему"}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "кто сейчас президент Франции", "lang": "ru-RU", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "кто изобрёл телефон", "lang": "ru-RU", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "почему листья желтеют осенью", "lang": "ru-RU", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "почему кошки мурлычут", "lang": "ru-RU", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}

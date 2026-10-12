@@ -1,0 +1,10 @@
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué hora es en Bogotá", "lang": "es-CO", "intent_label": "question", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "dónde queda la estación de TransMilenio más cercana", "lang": "es-CO", "intent_label": "question", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "cuándo es el próximo puente festivo", "lang": "es-CO", "intent_label": "question", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién es el alcalde de Medellín", "lang": "es-CO", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién ganó el partido de Nacional anoche", "lang": "es-CO", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "quién canta esa canción de vallenato", "lang": "es-CO", "intent_label": "who_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué se llama Colombia", "lang": "es-CO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué hace tanto frío en Bogotá", "lang": "es-CO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "por qué los colibríes mueven tan rápido las alas", "lang": "es-CO", "intent_label": "why_is", "needs_manual": true, "machine_generated": true}
+{"skill_id": "ovos-skill-fallback-unknown.openvoiceos", "utterance": "qué piensas del Atlético Nacional", "lang": "es-CO", "intent_label": "question", "needs_manual": true, "machine_generated": true}
